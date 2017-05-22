@@ -1,0 +1,163 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    background-color: #98FB98;
+    word-wrap: break-word;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#chat_frame {
+    height: 85vh;
+    width: 100vh;
+    border: outset;
+}
+
+#chatlist {
+    list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#chat_type_container {
+    min-height: 8vh;
+    width: 100vh;
+    border: outset;
+}
+
+.height-8vh {
+    height: 8vh;
+}
+
+.fgColor {
+    background-color: #CCFFE5;
+}
+
+#errorModalText {
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.link {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#yourLink {
+    font-weight: normal;
+}
+
+#groups {
+    margin-top: 5px;
+    border: outset;
+    width: 49.8%;
+}
+
+#users {
+    margin-top: 5px;
+    border: outset;
+    width: 49.8%;
+}
+
+.search-results {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sidebar {
+    border: outset;
+    margin-top: 5px;
+    margin-left: 8%;
+    width: 15%;
+    min-height: 93vh;
+    padding: 10px;
+}
+
+.homePost {
+    border: outset;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.homePost .groupLink {
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.homePost .groupName {
+    font-weight: bold;
+    font-size: 120%;
+    color: #000000;
+}
+
+.title {
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.group_btn {
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.logo {
+    font-size: 200%;
+    word-wrap: normal;
+}
+
+.black {
+    color: #000000;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.half-size-center {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.full-height {
+    min-height: 100%;
+}
+
+.m-top-15 {
+    margin-top: 15px;
+}
+
+.m-top-7 {
+    margin-top: 7px;
+}
+
+.m-right-5 {
+    margin-right: 5px;
+}
+
+.btn-success {
+    background: #00DD00;
+}
+
+.navbar-default {
+    background-color: #3CB371;
+    border-color: #000000;
+}

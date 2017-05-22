@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>IPSoc - [user]</title>
+  </head>
+  <body>
+    
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="nofloat">
+      <div class="container floatleft">
+        <div class="row">
+          <div class="col-md-1">
+            <a href="/home" id="homepageLink"><div class="logo black">IPSoc</div></a>
+          </div>
+          <div class="col-md-7">
+            <div class="black m-top-15 link" id="yourLink">Hello, [user]!</div>
+          </div>
+          <div class="col-md-4 input-group m-top-7">
+            <input type="text" class="form-control" placeholder="Search..." id="search_box">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" id="search_btn">Search</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="floatright m-top-7 m-right-5">
+        <div class="dropdown">
+          <button class="dropdown-toggle btn btn-success" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">...</button>
+          <ul class="dropdown-menu pull-right">
+            <li><a data-toggle="modal" data-target="#groupModal" id="createGroupLink">Create Group</a></li>
+            <li><a id="groupJoinLink">Group Joining Requests</a></li>
+            <li><a id="logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- CREATE GROUP MODAL START -->
+    <div class="modal fade" id="groupModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Group Name" id="groupNameBox">
+              <span class="input-group-btn">
+                <button type="button" data-dismiss="modal" class="btn btn-default" id="groupName_btn">Submit</button>
+              </span>
+            </div>
+            <button type="button" data-dismiss="modal" class="btn btn-default m-top-7">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CREATE GROUP MODAL END -->
+    <!-- ERROR MODAL START -->
+    <div class="modal fade" id="errorModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" id="errorModalText">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ERROR MODAL END -->
+
+    <div class="floatleft" id="sidebar">
+    </div>
+    <main class="half-size-center full-height" id="content_main">
+    </main>
+    
+  </body>
+</html>

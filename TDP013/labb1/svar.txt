@@ -1,0 +1,9 @@
+1. Vi anser att det är dåligt för alla involverade eftersom det blir mer komplicerat att utveckla en hemsida anpassad för alla browsers. Det kan även framstå problem vid tutorials.
+
+2. HTML är inte särskillt komplicerat, all syntax är relativt konsekvent (förutom länkar).
+CSS är också väldigt simpelt, det enda är att man lätt kan blanda ihop "." och "#" som nybörjare
+I JavaScript så saknade vi klasser (men det ska visst implementeras i kommande version). Det är också lite konstigt att man inte kan sätta "var"-nyckelordet vid inparametrar. Scopes är mysko med :(
+
+3. Ja, all testning kan automatiseras, vilket gör det mer effektivt. Dock kan inte allt testas, vilket betyder att man i vissa fall måste köra båda sorternas test. Man kan då fråga sig om det inte vore bättre att låta användaren testa allt.
+
+4. När man testat alla huvudfunktioner som inte har något visuellt respons. På en hemsida kan man aldrig testa allt. 

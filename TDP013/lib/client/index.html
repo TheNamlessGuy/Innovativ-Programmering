@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="index_style.css">
+    <script src="index_scripts.js"></script>
+    <script>check_cookie()</script>
+    <title>Welcome to IPSoc</title>
+  </head>
+  <body>
+    
+    <!-- ERROR MODAL START -->
+    <div class="modal fade" id="errorModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" id="errorModalText">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ERROR MODAL END -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <li><div class="logo">IPSoc</div></li>
+      </ul>
+    </nav>
+    <h1>IPSoc</h1>
+    <div class="login-box container">
+      <div class="row m-bottom-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-1">Name:</div>
+        <div class="col-md-1"><input type="text" id="username"></div>
+      </div>
+      <div class="row m-bottom-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-1">Password:</div>
+        <div class="col-md-1"><input type="password" id="password"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-default" id="login_btn">Login</button>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-default" id="register_btn">Register</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

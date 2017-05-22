@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.read {
+    border: double;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.unread {
+    border: double;
+    background: lightblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.messageCheckbox {
+    float: right;
+}
+
+#posts {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#error {
+    color: red;
+}
