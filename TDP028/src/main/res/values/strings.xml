@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Namless Music Player</string>
+    <string name="playSong">Play Song</string>
+    <string name="playAlbum">Play Album</string>
+    <string name="addToCurrentPlaylist">Add to current playlist</string>
+    <string name="removeFromPlaylist">Remove from playlist</string>
+    <string name="...">...</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96000000"
+    android:id="@+id/music_widget">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/widget_playpauseButton"
+        android:src="@drawable/widget_playbutton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/widget_previousButton"
+        android:layout_toEndOf="@+id/widget_previousButton" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/widget_previousButton"
+        android:src="@drawable/widget_prevbutton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/widget_stopButton"
+        android:src="@drawable/widget_stopbutton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/widget_playpauseButton"
+        android:layout_toEndOf="@+id/widget_playpauseButton" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/widget_nextButton"
+        android:src="@drawable/widget_nextbutton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/widget_stopButton"
+        android:layout_toEndOf="@+id/widget_stopButton" />
+
+    <ImageButton
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/widget_loopButton"
+        android:src="@drawable/widget_loopallbutton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="ARTIST - SONG"
+        android:singleLine="true"
+        android:id="@+id/widget_titleText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/==:=="
+        android:id="@+id/widget_totalPlaytimeText"
+        android:layout_below="@+id/widget_titleText"
+        android:layout_toLeftOf="@+id/widget_loopButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="==:=="
+        android:id="@+id/widget_currentPlaytime"
+        android:layout_below="@+id/widget_titleText"
+        android:layout_toLeftOf="@+id/widget_totalPlaytimeText"
+        android:layout_toStartOf="@+id/widget_totalPlaytimeText"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

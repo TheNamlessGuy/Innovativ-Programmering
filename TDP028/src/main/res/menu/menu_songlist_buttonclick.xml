@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/songlist_buttonclick_play"
+        android:title="@string/playSong" />
+    <item
+        android:id="@+id/songlist_buttonclick_addCur"
+        android:title="@string/addToCurrentPlaylist"/>
+</menu>

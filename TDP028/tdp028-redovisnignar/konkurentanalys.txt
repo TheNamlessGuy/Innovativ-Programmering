@@ -1,0 +1,34 @@
+﻿Här ska 3 kunkurerande appa länkas och beskrivas.
+
+Tänk på att en konkurent är en app som tar din kunds tid från dig genom att
+ge en likvärdig eller alternativ, relaterad tjänst. De ger dina kunder ett liknande värde som ersätter ditt - inte kopierar ditt.
+
+Även vanliga funktioner i mobiler är konkurenter. T.ex. finns ju nu mer lampor i Android
+från början och man behveör inte ladda ner en särksilld app för det. Miniräknare finns. Kalender finns. 
+
+OM du inte hittar något behveör du bredda din syn på vad du kan söka för det är inte så sannorlikt att
+det inte finns något. Det är ok att tänka mer i vilken kategori din app hamnar.
+(Hittar du under alla omständigheter inte något får du hitta på en app att göra en konkurentanalys mot.)
+
+Reflektera över hur du kan positionera din app i förhållande till konkurrenter. Hur måste du designa din app för att skilja dig eller
+fokusera mer på någoin relevant delmängd för att bli unik i förhållande till konkurenterna.
+***************************************************************************************************************************************************
+
+1. [Music Player](https://play.google.com/store/apps/details?id=media.audioplayer.musicplayer)
+Denna app, likt så många andra på Google Play, verkar fokusera på ett "flashigt" utseende, och att ha så många olika funktioner som möjligt. "Equalizer", bytbar bakgrundsbild, ID3-tag editing, etc.
+Jag ser allt sådant som onödiga saker som bara tar upp onödigt med plats och gör använding av appen mer komplicerad. Just denna app verkar ha in-app ads också, vilket jag
+ser som ett stort nej. Enligt mig ska inte en musikspelare behöva internet-access överhuvudtaget.
+
+2. [Deezer Music](https://play.google.com/store/apps/details?id=deezer.android.app)
+Denna app verkar fokusera väldigt mycket på att man inte ska ha sin musik lokalt, utan att man vill ha den i molnet (dock verkar den ladda ner nuvarande spellista eller liknande för offline-bruk).
+Detta tycker inte jag om, då jag (som sagt tidigare) inte tycker att en musikspelare ska behöva internet-access överhuvudtaget.
+Den verkar förlita sig mindre på "flashigt" utseende och "flashiga" funktioner, vilket i och för sig är ett steg uppåt från app #1.
+Den största nackdelen med denna app är dock att den har en "free"-variant och en "premium"-variant (styrt in-app). I "free"-varianten får man så klart ads och annat man skulle kunna vänta sig.
+Personligen har jag aldrig gillat den hela mentaliteten med en version av appen du köper. Jag skulle hellre se att de minskar priset aningen men håller den till 100% köpbar, eller
+(fast mindre attraktivt) att de tar bort priset helt, men alla får ads.
+
+3. [Music Player](https://play.google.com/store/apps/details?id=com.jrtstudio.music)
+Denna app skulle jag säga är den största konkurrenten till vad jag skulle vilja göra med min app. Väldigt basic, men ändå väldigt åtkomstbar. Dock ser jag nere i recensionerna
+att appen verkar ha stora problem med ads. Jag skulle säga att de borde (precis som appen ovan) byta till en modell där de har en väldigt liten "paywall" (säg runt $1), och hålla
+ads utanför appen. För det finns inget värre än att gå omkring och lyssna på musik och helt plötsligt få en ad för någon artist du inte ens gillar.
+Jag skulle vilja påpeka att devsen verkar väldigt aktiva med att försöka hjälpa de som har problem (i alla fall i recensionsfälten), vilket alltid är trevligt att se.

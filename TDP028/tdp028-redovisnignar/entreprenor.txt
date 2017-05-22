@@ -1,0 +1,22 @@
+﻿Har skriver du reflektioner över produktens potentiella funktioner ur ett enterprönöriellt persoekt.
+Submarknader, nischning, freemium-möjligheter för använadare.
+
+I ett modern perspektiv behveör man inte tjäna pengar på allt en global
+produkt levererar. Men man behveör hitta conternuerliga betalegenskaper.
+
+Förbrukningsbara värden, prenumerationstjänster i relation till produkten.
+Betänk global konkurrens. Vad kommer andra att lätt kuna ge bort för att ta
+dina kunder.
+******************************************************************************************
+Appen kommer att vara väldigt nischad, då de flesta verkar gilla att ha sådant som extra skins eller att slippa ha allt på mobilen.
+Appen är ju till för oss som inte bryr oss om hur den ser ut, eller inte bryr oss om extra "flashiga" saker man kan göra. Den ska kunna göra minimum av vad man skulle kunna tänka sig att en musikspelare ska göra.
+Spellistor är så avancerat den kommer gå.
+
+Dock så får man ett problem här: var kommer betalningsmöjligheterna in? Så klart kan man ju bara ta betalt en minimal summa (runt $1) för användning, men eftersom det är en sånt nischad användarbas kanske det
+inte räcker till slut. Problemet är att det går emot vad användningen av appen skulle vara för alla andra betalningsmöjligheter (i alla fall de jag kom på), som t.ex. extra skins, eller att man har ads emellan låtar.
+Om man börjar integrera sådana saker så kommer man förlora sin målgrupp ganska så snabbt. Man skulle så klart kunna integrera sig med något som Spotify och se till att alla lagrade offline-låtar är åtkomstbara från appen.
+Då måste man dock förlita sig på att appen blir så populär att man kan skriva kontrakt med Spotify för en promille av vad de tjänar.
+Därför tror jag att man helt enkelt får förlita sig på att appens simplicitet får fler folk att testa den och förhoppningsvis få in pengar på det sättet.
+
+Det som är bra med att ha en sån nischad marknad är ju dock att när man väl har tagit den så finns det inte mycket konkurrenter kan göra för att ta över. De måste helt enkelt gå ännu mer "lightweight", men
+då hamnar man lätt i en ännu mer nischad marknad, vilket jag inte skulle tro en konkurrent skulle tycka är tillräckligt. Det gäller bara att vara vid rätt tid på rätt plats (och med funktionerande mjukvara).

@@ -1,0 +1,8 @@
+﻿Här lägger du länkar som jag kan klicka på för att komma åt screencast på
+publikt ställe - antingen din egen dropbox eller youtube elelr vimeo ...
+
+2 stycken screencasts ska produceras. En som demar för användare och en
+som presenterar tekniken och implementeringen ur ett tekniskt perspektiv.
+**********************************************************************************
+[Användardemo](https://www.dropbox.com/s/1u7dlv3xmaylqbd/Anv%C3%A4ndardemo.mp4?dl=0)
+[Kodgenomgång](https://www.dropbox.com/s/1ux4gyagwdyrmos/Kodgenomg%C3%A5ng.mp4?dl=0)
