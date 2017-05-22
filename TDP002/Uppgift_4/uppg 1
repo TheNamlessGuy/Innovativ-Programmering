@@ -1,0 +1,6 @@
+file_input => stmt * ENDMARKER
+	   => stmt
+	   => simple_stmt ; NEWLINE
+	   => small_stmt
+	   => pass_stmt
+	   => ´pass´

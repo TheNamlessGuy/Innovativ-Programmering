@@ -1,0 +1,15 @@
+			file_input
+		       /     |     \
+		    stmt     *      ENDMARKER
+	          /  |  \
+	    	 /   |   \
+		/    |    \
+       simple_stmt   ;     NEWLINE
+       	    |			|?
+       small_stmt	     print()?
+            |
+	pass_stmt
+	    |
+	  pass
+
+			

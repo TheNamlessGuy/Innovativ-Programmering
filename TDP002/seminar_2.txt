@@ -1,0 +1,106 @@
+Uppgift 1:
+file_input => stmt NEWLINE stmt ENDMARKER
+	   => simple_stmt NEWLINE stmt ENDMARKER
+	   => small_stmt NEWLINE NEWLINE stmt ENDMARKER
+	   => pass_stmt NEWLINE NEWLINE stmt ENDMARKER
+	   => pass NEWLINE NEWLINE stmt ENDMARKER
+	   => pass NEWLINE NEWLINE compound_stmt ENDMARKER
+	   => pass NEWLINE NEWLINE decorated ENDMARKER
+	   => pass NEWLINE NEWLINE decorators ENDMARKER
+	   => pass NEWLINE NEWLINE decorator ENDMARKER
+	   => pass NEWLINE NEWLINE @dotted_name NEWLINE ENDMARKER
+	   => pass NEWLINE NEWLINE @NAME NEWLINE ENDMARKER
+	   => pass NEWLINE NEWLINE @print NEWLINE ENDMARKER
+
+	   file_input
+	|	|	|		|
+       stmt  NEWLINE  stmt	   ENDMARKER
+        |               |
+    simple_stmt   compound_stmt
+    |         |          |
+small_stmt NEWLINE   decorated
+    |                    |
+pass_stmt            decorators
+    |                    |
+   pass              decorator
+                     |           |
+	       @dotted_name   NEWLINE
+	       	     |
+	           @NAME
+		     |
+		  @print
+
+Uppgift 2:
+arith_expr => term + term
+	   => factor + term
+	   => power + term
+	   => atom + term
+	   => NAME + term
+	   => x + term
+	   => x + factor * factor
+	   => ...
+	   => x + atom * factor
+	   => x + NUMBER * factor
+	   => x + 3 * factor
+	   => x + 3 * -factor
+	   => x + 3 * -power
+	   => x + 3 * -atom
+	   => x + 3 * -NAME
+	   => x + 3 * -y
+
+	   arith_expr
+          |	|         |
+	term   '+'       term
+	  |           |    |   |
+       factor      factor '*' factor
+       	  |           |        |
+	power	    power    -factor
+	  |           |	       |
+	atom         atom    -power
+	  |	      |	       |
+	NAME	    NUMBER  -atom
+	  |	      |	       |
+	  x	      3     -NAME
+	  	   	       |
+	  	   	      -y
+
+Uppgift 3:
+expr_stmt => = testlist_star_expr
+	  => = star_expr
+	  => = * expr
+	  => = * xor_expr
+	  => = * and_expr
+	  => = * shift_expr
+	  => = * arith_expr
+	  => ...
+	  => = * atom
+	  => = * NAME
+	  => = * myint
+
+	     expr_stmt
+                 |
+         testlist_star_expr
+                 |
+             star_expr
+           |        |
+   	  '*'	   expr
+	    	    |
+		 xor_expr
+		    |
+		 and_expr
+		    |
+	        shift_expr
+		    |
+		arith_expr
+		    |
+		   term
+		    |
+		  factor
+		    |
+		  power
+		    |
+		   atom
+		    |
+		   NAME
+		    |
+		   myint

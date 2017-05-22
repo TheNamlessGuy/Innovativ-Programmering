@@ -1,0 +1,14 @@
+
+def sokoban_display(level):
+    largest_x = get_largest_loc(level, 1)
+    largest_y = get_largest_loc(level, 2)
+    for i in range(largest_x):
+        for j in range(largest_y):
+            found_icon = False
+            for icon in level:
+                if icon[1] == i and icon[2] == j:
+                    found_icon = True
+                    print(get_icon(icon), end='')
+            if not found_icon:
+                print(" ", end='')
+        print()
