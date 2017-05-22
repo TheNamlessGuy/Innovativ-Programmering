@@ -1,0 +1,85 @@
+﻿<Window x:Class="Mr.Mind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mr. Mind" Height="615" Width="815">
+    <Grid Background="Black">
+        <Button HorizontalAlignment="Center"  Name="PvP" Width="200" Height="105" Margin="290,10,290,445">
+            <Image Source="Res/Images/Buttons/pvp.png"/>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button HorizontalAlignment="Center"  Name="PvE" Width="200" Height="105" Margin="290,120,290,335">
+            <Image Source="Res/Images/Buttons/pve.png"/>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button HorizontalAlignment="Center"  Name="EvP" Width="200" Height="105" Margin="290,230,290,225">
+            <Image Source="Res/Images/Buttons/evp.png"/>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button HorizontalAlignment="Center"  Name="EvE" Width="200" Height="105" Margin="290,340,290,115">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <TextBlock Width="200" Height="50" Text="Columns:" Margin="94,511,513,24" Background="Black" Foreground="White" FontSize="36"/>
+        <TextBlock Width="200" Height="50" Text="Rows:" Margin="94,457,513,78" Background="Black" Foreground="White" FontSize="36"/>
+        <TextBlock Name="row8" Text="8" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="291,448,451,72" PreviewMouseLeftButtonDown="colClick" />
+        <TextBlock Name="row10" Text="10" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="371,448,371,72" PreviewMouseLeftButtonDown="colClick" />
+        <TextBlock Name="row12" Text="12" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="446,448,296,72" PreviewMouseLeftButtonDown="colClick" />
+        <TextBlock Name="col4" Text="4" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="291,503,451,17" PreviewMouseLeftButtonDown="rowClick" />
+        <TextBlock Name="col5" Text="5" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="371,503,371,17" PreviewMouseLeftButtonDown="rowClick" />
+        <TextBlock Name="col6" Text="6" Background="Black" Height="50" Width="50" FontSize="36" TextAlignment="Center" Foreground="White" Margin="446,503,296,17" PreviewMouseLeftButtonDown="rowClick" />
+        <Border Name="rowBorder" BorderThickness="3" BorderBrush="Red" Width="50" Height="50" Margin="290,450,450,70" />
+        <Border Name="colBorder" BorderThickness="3" BorderBrush="Red" Width="50" Height="50" Margin="291,503,451,17" />
+    </Grid>
+</Window>

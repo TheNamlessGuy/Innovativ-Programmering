@@ -1,0 +1,34 @@
+﻿<Window x:Class="Mr.Mind.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mr. Mind" Height="850" Width="850" Background="Black">
+    <Grid>
+        <Grid Width="150" Margin="647,0,0,0" Name="ballColorGrid" HorizontalAlignment="Center">
+            <Image Source="Res/Images/BallBoxes/Ballbox_Red.png" Name="Red" Height="102.5" Margin="0,10,0,567" MouseLeftButtonDown="onColorBoxClick"/>
+            <Image Source="Res/Images/BallBoxes/Ballbox_Green.png" Name="Green" Height="102.5" Margin="0,114,0,464" MouseLeftButtonDown="onColorBoxClick"/>
+            <Image Source="Res/Images/BallBoxes/Ballbox_Blue.png" Name="Blue" Height="102.5" Margin="0,216,0,361" MouseLeftButtonDown="onColorBoxClick"/>
+            <Image Source="Res/Images/BallBoxes/Ballbox_Yellow.png" Name="Yellow" Height="102.5" Margin="0,320,0,258" MouseLeftButtonDown="onColorBoxClick"/>
+            <Image Source="Res/Images/BallBoxes/Ballbox_Purple.png" Name="Purple" Height="102.5" Margin="0,423,0,154" MouseLeftButtonDown="onColorBoxClick"/>
+            <Image Source="Res/Images/BallBoxes/Ballbox_Black.png" Name="Black" Height="102.5" Margin="0,526,0,51" MouseLeftButtonDown="onColorBoxClick"/>
+        </Grid>
+        <Grid Height="819" Name="MainGrid" Margin="196,0,196,0">
+            <Grid Name="PegGrid" Width="50" Height="819" Margin="400,0,0,0">
+                <Image Source="Res/Images/Board/pegBoard.png" Name="pegBoard" Width="50" Height="850" Margin="0"/>
+            </Grid>
+            <Grid Name="BallGrid" Width="400" Height="819" Margin="0,0,50,0">
+                <Image Source="Res/Images/Board/ballBoard.png" Name="ballBoard" Width="400" Height="850" Margin="0"/>
+            </Grid>
+            <Canvas Name="codePopup" Width="450" Background="Black" Margin="0">
+                <TextBlock Name="popupMessage" Width="450" Text="Choose code:" Foreground="White" TextAlignment="Center" FontSize="40" Margin="0" Canvas.Top="132" />
+            </Canvas>
+        </Grid>
+        <Grid Width="200" Margin="0,0,650,0" Name="InfoGrid">
+            <TextBlock Name="currentTurn" Foreground="White" FontSize="18" Text="Codemaker's turn" Width="200" Height="50" Margin="0,0,0,769" Padding="10"/>
+            <TextBlock Name="currentPlayerInfo" Foreground="White" FontSize="18" Text="Current color:" Width="200" Height="50" Margin="0,212,0,557" Padding="10"/>
+            <Image Source="Res/Images/Balls/0.png" Name="currentColor" Height="100" Width="100" Margin="50,262,50,457"/>
+            <Button Name="nextTurn" Content="Next turn" Click="onChangeTurnClick" Width="150" Height="75" FontSize="18" BorderThickness="1" BorderBrush="White" Background="Transparent" Foreground="White" Margin="25,451,25,293" />
+            <Button Name="showCode" Content="Show code" Click="onShowCodeClick" Width="150" Height="75" FontSize="18" BorderThickness="1" BorderBrush="White" Background="Transparent" Foreground="White" Margin="25,531,25,213" />
+            <TextBlock Name="errorMessage" Foreground="Red" FontSize="12" Width="200" Height="150" Margin="0,669,0,0" Padding="10" TextWrapping="WrapWithOverflow"/>
+        </Grid>
+    </Grid>
+</Window>
