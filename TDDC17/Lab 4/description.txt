@@ -1,0 +1,31 @@
+The domain consists of a set of rooms,
+a set of boxes which can't be picked up, but can me moved and climbed,
+a set of small objects which can me picked up and put down,
+and (of course) one shakey, who in turn has two arms.
+
+The goal is for Shakey to pick up a toy and move it to a different room.
+
+The variables chosen would be the number of toys, how many should be moved, and to how many different rooms.
+
+RESULTS:
+    FF:
+    4 toys, 1 move, 1 room => 0.00 seconds, 8 steps
+    4 toys, 4 move, 2 room => 0.00 seconds, 18 steps
+    16 toys, 16 move, 3 room => 0.00 seconds, 54 steps
+    
+    LAMA:
+    4 toys, 1 move, 1 room => 0.02 seconds, 14 cost
+    4 toys, 4 move, 2 room => 0.59 seconds, 24 cost
+    16 toys, 16 move, 3 room => 30+ min, ??? cost
+
+CONCLUSION:
+LAMA seems to both take longer time, and also find worse results. The latter part might very well be in part to the particular problems
+I put it through, and might be opposite in more complicated matters (or even if the last test had finished running).
+
+Most of LAMAs time seems to come from it trying to find a good heuristic (as that is where it got stuck for over 30 minutes).
+It, of course, also takes longer time since it runs in three separate programs which communicate through files.
+This means that all the data between the parts need to be written to disk, then immediately read again. This would an exponential amount of time.
+
+I should mention I also ran these test through SSH from a computer at home, so the results may be (slightly) different on location.
+
+In conclusion, (at least for my domain) ff is the better solution.
