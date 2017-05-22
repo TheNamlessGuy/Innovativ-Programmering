@@ -1,0 +1,52 @@
+// maxbr431, davsp799
+
+1)
+   a) R(A, B, C, D) => Primary key (A, B), AB->C, A->D
+   b) R(A, B, C, D) => Primary key (A), D->C
+   c) R(A, B, C, D) => Primary key (A, B), AB->CD, C->B
+
+2)
+   R={A, B, C, D, E, F} => AB->C, A->D, D->AE, E->F
+   a) A->D, D->AE = A->AE (transitive)
+      A->AE = A->E (decomposition)
+      A->E, E->F = A->F (transitive)
+      AB⊇A = AB->A (reflexive)
+      AB->A, A->D = AB->D (transitive)
+      AB->A, A->E = AB->E (transitive)
+      AB->A, A->F = AB->F (transitive)
+      AB->A, AB->C, AB->D, AB->E, AB->F = Primary key (AB)
+
+   b) R1=(A, B)
+      R2=(A, C, D, F)
+      R3=(A, E)
+
+   c) R1=(A, B)
+      R2=(A, C, D, F)
+      R3=(A, E)
+
+   d) R1=(A, B, C)
+      R2=(A, B, D)
+      R3=(A, B, E)
+      R4=(A, B, F)
+
+3)
+   a) BOOK(Title#, Title, Author#, BookType, Price, AuthorName, Publisher)
+      Title# => Title, BookType, Publisher
+      Author# => AuthorName
+      BookType => Price
+      Primary key (Title#, Author#)
+
+   b) 2NF:
+         BOOKID(Title#, Author#)
+         AUTHOR(Author#, AuthorName)
+         BOOK(Title#, Title, BookType, Publisher, Price)
+      3NF:
+         BOOKID(Title#, Author#)
+         AUTHOR(Author#, AuthorName)
+         BOOK(Title#, Title, BookType, Publisher)
+         PRICES(BookType, Price)
+      BCNF:
+         BOOKID(Title#, Author#)
+         AUTHOR(Author#, AuthorName)
+         BOOK(Title#, Title, BookType, Publisher)
+         PRICES(BookType, Price)

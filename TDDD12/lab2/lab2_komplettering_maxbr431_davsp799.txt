@@ -1,0 +1,19 @@
+/*3)
+
+Add the following code at the end:*/
+
+ALTER TABLE jbemployee
+DROP FOREIGN KEY fk_emp_mgr;
+ALTER TABLE jbemployee
+ADD FOREIGN KEY (manager) REFERENCES jbmanagers(id);
+
+/*5a)
+
+The following replaces jbdeposit & jbwithdrawal*/
+
+CREATE TABLE jbmoneyio
+(
+   id int PRIMARY KEY,
+   isWithdrawal boolean NOT NULL, /* false => deposit, true => withdrawal */
+   FOREIGN KEY (id) REFERENCES jbtransaction(id)
+);

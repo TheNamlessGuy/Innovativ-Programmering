@@ -1,0 +1,20 @@
+8)
+   a) You can encrypt the credit card info and protect your database from SQL injections.
+   b) 1: Less strain on the client-side.
+      2: Can protect from false parameter inputs.
+      3: Easier to change/bugfix code.
+
+9)
+   b) Not visible. Because it hasn't been commited yet, only stored in the A-instance.
+   c) B waits for a COMMIT. It does this to prevent synchronization errors.
+
+10)
+   a) Yes, because we don't have any transaction control.
+   b) Yes, it's possible if both instances check if they can add more before either adds more (so the tables are empty for both).
+   c) The case occurs depending on how the OS the database is running on functions, in what timing the queries are executed, and other eventual processes the database OS is running (and what they are doing).
+   d) The LOCK TABLES implementation SHOULD work by not allowing the tables to be modified by another thread until the thread currently having the locks releases them. Since we also individually lock every instance of every table we use, there should be no chance for synchronization errors to happen. The lock surrounds the addPayment procedure call since we can get a synchronization error in the addPayment procedure which would lead to overbooking.
+
+Secondary Index)
+   CREATE INDEX origin ON route(origin);
+
+   For searching purposes, it'll be far more efficient to have a way to check all the planes that leave from a certain airport (so the customer can know where he/she can fly).

@@ -1,0 +1,34 @@
+2)
+   R={A, B, C, D, E, F} => AB->C, A->D, D->AE, E->F
+   a) A->D, D->AE = A->AE (transitive)
+      A->AE = A->E (decomposition)
+      A->E, E->F = A->F (transitive)
+      
+      D->AE = D->A & D->E (decomposition)
+      D->E, E->F = D->F (transitive)
+
+      AB⊇A = AB->A (reflexive)
+      AB->A, A->D = AB->D (transitive)
+      AB->A, A->E = AB->E (transitive)
+      AB->A, A->F = AB->F (transitive)
+
+      D->A, AB->C = DB->C (pseudotransitive)
+      DB⊇D = DB->D (reflexive)
+      DB->D, D->A = DB->A (transitive)
+      DB->D, D->E = DB->E (transitive)
+      DB->D, D->F = DB->F (transitive)
+      
+      Candidate keys(AB, DB)
+      Primary key(AB)
+
+   b) R1=(A, B)
+      R2=(A, C, D, F, E)
+
+   c) R1=(A, B)
+      R2=(A, C, D, F)
+      R3=(A, E)
+
+   d) R1=(A, B, C)
+      R2=(A, B, D)
+      R3=(A, B, E)
+      R4=(A, B, F)

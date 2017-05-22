@@ -1,0 +1,15 @@
+2)
+
+  R={A, B, C, D, E, F} => AB->C, A->D, D->AE, E->F
+
+  b) R1=(A, B, C, D)
+     R2=(D, E, F)
+
+  c) R1=(A, B, C, D)
+     R2=(D, E)
+     R3=(E, F)
+
+  d) R1=(A, B, C)
+     R2=(D, E)
+     R3=(E, F)
+     R4=(A, D)
