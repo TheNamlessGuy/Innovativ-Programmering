@@ -1,0 +1,10 @@
+{
+    "persons": [
+        {"name": "Jakob Pogulis", "key": "1"},
+        {"name": "Xena", "key": "2"},
+        {"name": "Marcus Bendtsen", "key": "3"},
+        {"name": "Zorro", "key": "4"},
+        {"name": "Q", "key": "5"},
+        {"name": "coolmarkus", "key": "6"}
+    ]
+}

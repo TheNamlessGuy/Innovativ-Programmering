@@ -1,0 +1,268 @@
+2016-10-18 15:37:28:283: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK)
+2016-10-18 15:37:31:780: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK) => Account created
+2016-10-18 15:37:31:785: INFO => createAccount(testCreatePersonKey, testCreateBankKey, SAVINGS)
+2016-10-18 15:37:31:793: INFO => createAccount(testCreatePersonKey, testCreateBankKey, SAVINGS) => Account created
+2016-10-18 15:37:31:797: INFO => createAccount(testCreatePersonKey, testCreateBankKey, BANANER)
+2016-10-18 15:37:31:801: ERROR => createAccount(testCreatePersonKey, testCreateBankKey, BANANER) => ERROR FOUND: Type has to be CHECK or SAVINGS
+2016-10-18 15:37:31:812: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey, CHECK)
+2016-10-18 15:37:32:059: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey, CHECK) => Account created
+2016-10-18 15:37:32:064: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey, SAVINGS)
+2016-10-18 15:37:32:073: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey, SAVINGS) => Account created
+2016-10-18 15:37:32:078: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey2, CHECK)
+2016-10-18 15:37:32:086: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey2, CHECK) => Account created
+2016-10-18 15:37:32:091: INFO => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey2, BANANER)
+2016-10-18 15:37:32:096: ERROR => createAccount(testFindAllAccountsPersonKey, testFindAllAccountsBankKey2, BANANER) => ERROR FOUND: Type has to be CHECK or SAVINGS
+2016-10-18 15:37:32:102: INFO => findAccountsFor(testFindAllAccountsPersonKey)
+2016-10-18 15:37:32:458: INFO => findAccountsFor(testFindAllAccountsPersonKey) => Found accounts: [1,2,3]
+2016-10-18 15:37:32:463: INFO => findAccountsFor(Banannyckeln)
+2016-10-18 15:37:32:470: INFO => findAccountsFor(Banannyckeln) => Found accounts: []
+2016-10-18 15:37:33:383: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK)
+2016-10-18 15:37:36:897: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK) => Account created
+2016-10-18 15:37:36:902: INFO => createTransaction(1, 0, DEBIT)
+2016-10-18 15:37:37:021: INFO => createTransaction(1, 0, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:37:026: INFO => createTransaction(1, 0, CREDIT)
+2016-10-18 15:37:37:038: INFO => createTransaction(1, 0, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:37:043: INFO => createTransaction(1, 0, DEBIT)
+2016-10-18 15:37:37:055: INFO => createTransaction(1, 0, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:37:060: INFO => createTransaction(1, 0, BANAN)
+2016-10-18 15:37:37:069: ERROR => createTransaction(1, 0, BANAN) => ERROR FOUND: Transaction type needs to be DEBIT or CREDIT
+2016-10-18 15:37:37:075: INFO => findTransactionFor(1)
+2016-10-18 15:37:37:413: INFO => findTransactionFor(1) => Got transactions: [1,2,3]
+2016-10-18 15:37:37:426: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK)
+2016-10-18 15:37:37:648: INFO => createAccount(testCreatePersonKey, testCreateBankKey, CHECK) => Account created
+2016-10-18 15:37:37:653: INFO => createTransaction(1, 100, CREDIT)
+2016-10-18 15:37:37:722: INFO => createTransaction(1, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:37:728: INFO => createTransaction(1, 100, DEBIT)
+2016-10-18 15:37:37:740: INFO => createTransaction(1, 100, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:37:745: INFO => createTransaction(1, 100, DEBIT)
+2016-10-18 15:37:37:757: INFO => createTransaction(1, 100, DEBIT) => Transaction created (FAILED)
+2016-10-18 15:37:37:763: INFO => createTransaction(500, 0, CREDIT)
+2016-10-18 15:37:37:773: ERROR => createTransaction(500, 0, CREDIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:37:778: INFO => createTransaction(1, -10, CREDIT)
+2016-10-18 15:37:37:791: INFO => createTransaction(1, -10, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:37:796: INFO => createTransaction(1, 0, BANANER)
+2016-10-18 15:37:37:806: ERROR => createTransaction(1, 0, BANANER) => ERROR FOUND: Transaction type needs to be DEBIT or CREDIT
+2016-10-18 15:37:39:746: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS)
+2016-10-18 15:37:39:853: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:39:859: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Bank gotten (key: 10)
+2016-10-18 15:37:39:864: INFO => createAccount(6, 10, SAVINGS)
+2016-10-18 15:37:42:754: INFO => createAccount(6, 10, SAVINGS) => Account created
+2016-10-18 15:37:42:758: INFO => createAccount(coolmarkus, tjuvbank, CHECK)
+2016-10-18 15:37:42:764: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Person gotten (key: 6)
+2016-10-18 15:37:42:771: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:42:776: INFO => createAccount(6, 10, CHECK)
+2016-10-18 15:37:42:783: INFO => createAccount(6, 10, CHECK) => Account created
+2016-10-18 15:37:42:789: INFO => createAccount(coolmarkus, SWEDBANK, SAVINGS)
+2016-10-18 15:37:42:796: INFO => createAccount(coolmarkus, SWEDBANK, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:42:803: INFO => createAccount(coolmarkus, SWEDBANK, SAVINGS) => Bank gotten (key: 1)
+2016-10-18 15:37:42:809: INFO => createAccount(6, 1, SAVINGS)
+2016-10-18 15:37:42:816: INFO => createAccount(6, 1, SAVINGS) => Account created
+2016-10-18 15:37:42:820: INFO => createAccount(coolmarkus, SBAB, SAVINGS)
+2016-10-18 15:37:42:828: INFO => createAccount(coolmarkus, SBAB, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:42:840: INFO => createAccount(coolmarkus, SBAB, SAVINGS) => Bank gotten (key: 7)
+2016-10-18 15:37:42:845: INFO => createAccount(6, 7, SAVINGS)
+2016-10-18 15:37:42:854: INFO => createAccount(6, 7, SAVINGS) => Account created
+2016-10-18 15:37:42:859: INFO => createAccount(Q, IKANOBANKEN, SAVINGS)
+2016-10-18 15:37:42:867: INFO => createAccount(Q, IKANOBANKEN, SAVINGS) => Person gotten (key: 5)
+2016-10-18 15:37:42:875: INFO => createAccount(Q, IKANOBANKEN, SAVINGS) => Bank gotten (key: 2)
+2016-10-18 15:37:42:879: INFO => createAccount(5, 2, SAVINGS)
+2016-10-18 15:37:42:889: INFO => createAccount(5, 2, SAVINGS) => Account created
+2016-10-18 15:37:42:896: INFO => findAccountsFor(coolmarkus)
+2016-10-18 15:37:42:904: INFO => findAccountsFor(coolmarkus) => Person gotten (key: 6)
+2016-10-18 15:37:42:909: INFO => findAccountsFor(6)
+2016-10-18 15:37:43:281: INFO => findAccountsFor(6) => Found accounts: [1,2,3,4]
+2016-10-18 15:37:43:285: INFO => findAccountsFor(null)
+2016-10-18 15:37:43:292: INFO => findAccountsFor(null) => Person not found
+2016-10-18 15:37:43:296: INFO => findAccountsFor(coolare markus)
+2016-10-18 15:37:43:302: INFO => findAccountsFor(coolare markus) => Person not found
+2016-10-18 15:37:43:306: INFO => findAccountsFor()
+2016-10-18 15:37:43:313: INFO => findAccountsFor() => Person not found
+2016-10-18 15:37:43:327: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS)
+2016-10-18 15:37:43:336: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:43:343: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Bank gotten (key: 10)
+2016-10-18 15:37:43:349: INFO => createAccount(6, 10, SAVINGS)
+2016-10-18 15:37:43:582: INFO => createAccount(6, 10, SAVINGS) => Account created
+2016-10-18 15:37:43:586: INFO => createAccount(coolmarkus, tjuvbank, CHECK)
+2016-10-18 15:37:43:592: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Person gotten (key: 6)
+2016-10-18 15:37:43:600: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:43:605: INFO => createAccount(6, 10, CHECK)
+2016-10-18 15:37:43:613: INFO => createAccount(6, 10, CHECK) => Account created
+2016-10-18 15:37:43:619: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS)
+2016-10-18 15:37:43:627: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:43:635: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Bank gotten (key: 10)
+2016-10-18 15:37:43:639: INFO => createAccount(6, 10, SAVINGS)
+2016-10-18 15:37:43:648: INFO => createAccount(6, 10, SAVINGS) => Account created
+2016-10-18 15:37:43:653: INFO => createAccount(, tjuvbank, SAVINGS)
+2016-10-18 15:37:43:659: INFO => createAccount(, tjuvbank, SAVINGS) => Person not found
+2016-10-18 15:37:43:663: INFO => createAccount(coolmarkus, , SAVINGS)
+2016-10-18 15:37:43:670: INFO => createAccount(coolmarkus, , SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:43:676: INFO => createAccount(coolmarkus, , SAVINGS) => Bank not found
+2016-10-18 15:37:43:681: INFO => createAccount(coolmarkus, tjuvbank, )
+2016-10-18 15:37:43:687: INFO => createAccount(coolmarkus, tjuvbank, ) => Person gotten (key: 6)
+2016-10-18 15:37:43:695: INFO => createAccount(coolmarkus, tjuvbank, ) => Bank gotten (key: 10)
+2016-10-18 15:37:43:700: INFO => createAccount(6, 10, )
+2016-10-18 15:37:43:705: ERROR => createAccount(6, 10, ) => ERROR FOUND: Type has to be CHECK or SAVINGS
+2016-10-18 15:37:43:710: INFO => createAccount(tjabba, tjuvbank, SAVINGS)
+2016-10-18 15:37:43:717: INFO => createAccount(tjabba, tjuvbank, SAVINGS) => Person not found
+2016-10-18 15:37:43:722: INFO => createAccount(coolmarkus, :(, SAVINGS)
+2016-10-18 15:37:43:730: INFO => createAccount(coolmarkus, :(, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:43:736: INFO => createAccount(coolmarkus, :(, SAVINGS) => Bank not found
+2016-10-18 15:37:43:740: INFO => createAccount(coolmarkus, tjuvbank, BANANER)
+2016-10-18 15:37:43:746: INFO => createAccount(coolmarkus, tjuvbank, BANANER) => Person gotten (key: 6)
+2016-10-18 15:37:43:753: INFO => createAccount(coolmarkus, tjuvbank, BANANER) => Bank gotten (key: 10)
+2016-10-18 15:37:43:757: INFO => createAccount(6, 10, BANANER)
+2016-10-18 15:37:43:763: ERROR => createAccount(6, 10, BANANER) => ERROR FOUND: Type has to be CHECK or SAVINGS
+2016-10-18 15:37:43:767: INFO => createAccount(null, tjuvbank, SAVINGS)
+2016-10-18 15:37:43:772: INFO => createAccount(null, tjuvbank, SAVINGS) => One of the parameters was not defined
+2016-10-18 15:37:43:777: INFO => createAccount(coolmarkus, null, SAVINGS)
+2016-10-18 15:37:43:781: INFO => createAccount(coolmarkus, null, SAVINGS) => One of the parameters was not defined
+2016-10-18 15:37:43:786: INFO => createAccount(coolmarkus, tjuvbank, null)
+2016-10-18 15:37:43:791: INFO => createAccount(coolmarkus, tjuvbank, null) => One of the parameters was not defined
+2016-10-18 15:37:45:436: INFO => createAccount(coolmarkus, tjuvbank, CHECK)
+2016-10-18 15:37:45:563: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Person gotten (key: 6)
+2016-10-18 15:37:45:569: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:45:574: INFO => createAccount(6, 10, CHECK)
+2016-10-18 15:37:48:534: INFO => createAccount(6, 10, CHECK) => Account created
+2016-10-18 15:37:48:539: INFO => createTransaction(1, 100, CREDIT)
+2016-10-18 15:37:48:721: INFO => createTransaction(1, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:48:727: INFO => createTransaction(1, 100, DEBIT)
+2016-10-18 15:37:48:740: INFO => createTransaction(1, 100, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:48:745: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS)
+2016-10-18 15:37:48:753: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:48:760: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Bank gotten (key: 10)
+2016-10-18 15:37:48:765: INFO => createAccount(6, 10, SAVINGS)
+2016-10-18 15:37:48:774: INFO => createAccount(6, 10, SAVINGS) => Account created
+2016-10-18 15:37:48:783: INFO => createTransaction(2, 100, CREDIT)
+2016-10-18 15:37:48:812: INFO => createTransaction(2, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:48:833: INFO => createTransaction(2, 100, CREDIT)
+2016-10-18 15:37:48:847: INFO => createTransaction(2, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:48:853: INFO => createTransaction(2, 100, DEBIT)
+2016-10-18 15:37:48:867: INFO => createTransaction(2, 100, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:48:872: INFO => createTransaction(2, 50, DEBIT)
+2016-10-18 15:37:48:887: INFO => createTransaction(2, 50, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:48:892: INFO => createTransaction(2, 50, DEBIT)
+2016-10-18 15:37:48:904: INFO => createTransaction(2, 50, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:48:909: INFO => createTransaction(2, 1, DEBIT)
+2016-10-18 15:37:48:921: INFO => createTransaction(2, 1, DEBIT) => Transaction created (FAILED)
+2016-10-18 15:37:48:926: INFO => findTransactionFor(2)
+2016-10-18 15:37:49:274: INFO => findTransactionFor(2) => Got transactions: [3,4,5,6,7,8]
+2016-10-18 15:37:49:279: INFO => findTransactionFor(500000)
+2016-10-18 15:37:49:286: INFO => findTransactionFor(500000) => Got transactions: []
+2016-10-18 15:37:49:296: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS)
+2016-10-18 15:37:49:306: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Person gotten (key: 6)
+2016-10-18 15:37:49:313: INFO => createAccount(coolmarkus, tjuvbank, SAVINGS) => Bank gotten (key: 10)
+2016-10-18 15:37:49:318: INFO => createAccount(6, 10, SAVINGS)
+2016-10-18 15:37:49:533: INFO => createAccount(6, 10, SAVINGS) => Account created
+2016-10-18 15:37:49:538: INFO => createTransaction(1, 100, CREDIT)
+2016-10-18 15:37:49:593: INFO => createTransaction(1, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:49:598: INFO => createTransaction(1, 50, DEBIT)
+2016-10-18 15:37:49:610: INFO => createTransaction(1, 50, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:49:615: INFO => createTransaction(1, 51, DEBIT)
+2016-10-18 15:37:49:625: INFO => createTransaction(1, 51, DEBIT) => Transaction created (FAILED)
+2016-10-18 15:37:49:631: INFO => createTransaction(1, -10, DEBIT)
+2016-10-18 15:37:49:644: INFO => createTransaction(1, -10, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:49:649: INFO => createTransaction(5000000, 100, CREDIT)
+2016-10-18 15:37:49:660: ERROR => createTransaction(5000000, 100, CREDIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:49:665: INFO => createTransaction(1, 100, BANANER)
+2016-10-18 15:37:49:675: ERROR => createTransaction(1, 100, BANANER) => ERROR FOUND: Transaction type needs to be DEBIT or CREDIT
+2016-10-18 15:37:49:681: INFO => createTransaction(1, 100, null)
+2016-10-18 15:37:49:689: ERROR => createTransaction(1, 100, null) => ERROR FOUND: null
+2016-10-18 15:37:51:436: INFO => createTransaction(500000, 0, DEBIT)
+2016-10-18 15:37:54:507: ERROR => createTransaction(500000, 0, DEBIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:54:513: INFO => createAccount(Xena, tjuvbank, CHECK)
+2016-10-18 15:37:54:597: INFO => createAccount(Xena, tjuvbank, CHECK) => Person gotten (key: 2)
+2016-10-18 15:37:54:604: INFO => createAccount(Xena, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:54:609: INFO => createAccount(2, 10, CHECK)
+2016-10-18 15:37:54:677: INFO => createAccount(2, 10, CHECK) => Account created
+2016-10-18 15:37:54:682: INFO => findAccountsFor(Xena)
+2016-10-18 15:37:54:690: INFO => findAccountsFor(Xena) => Person gotten (key: 2)
+2016-10-18 15:37:54:695: INFO => findAccountsFor(2)
+2016-10-18 15:37:55:039: INFO => findAccountsFor(2) => Found accounts: [1]
+2016-10-18 15:37:55:044: INFO => createTransaction(1, 0, DEBIT)
+2016-10-18 15:37:55:098: INFO => createTransaction(1, 0, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:55:104: INFO => createTransaction(1, 100, DEBIT)
+2016-10-18 15:37:55:116: INFO => createTransaction(1, 100, DEBIT) => Transaction created (FAILED)
+2016-10-18 15:37:55:121: INFO => createTransaction(-1, 0, DEBIT)
+2016-10-18 15:37:55:128: ERROR => createTransaction(-1, 0, DEBIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:55:133: INFO => createTransaction(1, -1, DEBIT)
+2016-10-18 15:37:55:172: INFO => createTransaction(1, -1, DEBIT) => Transaction created (OK)
+2016-10-18 15:37:55:179: INFO => createTransaction(-1, -1, DEBIT)
+2016-10-18 15:37:55:185: ERROR => createTransaction(-1, -1, DEBIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:55:201: INFO => createTransaction(500000, 0, CREDIT)
+2016-10-18 15:37:55:428: ERROR => createTransaction(500000, 0, CREDIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:55:433: INFO => createAccount(Xena, tjuvbank, CHECK)
+2016-10-18 15:37:55:440: INFO => createAccount(Xena, tjuvbank, CHECK) => Person gotten (key: 2)
+2016-10-18 15:37:55:447: INFO => createAccount(Xena, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:55:453: INFO => createAccount(2, 10, CHECK)
+2016-10-18 15:37:55:473: INFO => createAccount(2, 10, CHECK) => Account created
+2016-10-18 15:37:55:478: INFO => findAccountsFor(Xena)
+2016-10-18 15:37:55:485: INFO => findAccountsFor(Xena) => Person gotten (key: 2)
+2016-10-18 15:37:55:489: INFO => findAccountsFor(2)
+2016-10-18 15:37:55:508: INFO => findAccountsFor(2) => Found accounts: [1]
+2016-10-18 15:37:55:514: INFO => createTransaction(1, 0, CREDIT)
+2016-10-18 15:37:55:548: INFO => createTransaction(1, 0, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:55:553: INFO => createTransaction(1, 100, CREDIT)
+2016-10-18 15:37:55:584: INFO => createTransaction(1, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:55:589: INFO => createTransaction(-1, 0, CREDIT)
+2016-10-18 15:37:55:596: ERROR => createTransaction(-1, 0, CREDIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:55:601: INFO => createTransaction(1, -1, CREDIT)
+2016-10-18 15:37:55:616: INFO => createTransaction(1, -1, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:55:621: INFO => createTransaction(-1, -1, CREDIT)
+2016-10-18 15:37:55:628: ERROR => createTransaction(-1, -1, CREDIT) => ERROR FOUND: Object: null is not a known entity type.
+2016-10-18 15:37:55:639: INFO => findTransactionFor(500000)
+2016-10-18 15:37:55:832: INFO => findTransactionFor(500000) => Got transactions: []
+2016-10-18 15:37:55:857: INFO => createAccount(Xena, tjuvbank, CHECK)
+2016-10-18 15:37:55:866: INFO => createAccount(Xena, tjuvbank, CHECK) => Person gotten (key: 2)
+2016-10-18 15:37:55:875: INFO => createAccount(Xena, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:55:880: INFO => createAccount(2, 10, CHECK)
+2016-10-18 15:37:55:894: INFO => createAccount(2, 10, CHECK) => Account created
+2016-10-18 15:37:55:899: INFO => findAccountsFor(Xena)
+2016-10-18 15:37:55:907: INFO => findAccountsFor(Xena) => Person gotten (key: 2)
+2016-10-18 15:37:55:913: INFO => findAccountsFor(2)
+2016-10-18 15:37:55:928: INFO => findAccountsFor(2) => Found accounts: [1]
+2016-10-18 15:37:55:934: INFO => findTransactionFor(1)
+2016-10-18 15:37:55:944: INFO => findTransactionFor(1) => Got transactions: []
+2016-10-18 15:37:55:949: INFO => createTransaction(1, 100, CREDIT)
+2016-10-18 15:37:55:989: INFO => createTransaction(1, 100, CREDIT) => Transaction created (OK)
+2016-10-18 15:37:55:995: INFO => findTransactionFor(1)
+2016-10-18 15:37:56:003: INFO => findTransactionFor(1) => Got transactions: [1]
+2016-10-18 15:37:56:052: INFO => findTransactionFor(-1)
+2016-10-18 15:37:56:059: INFO => findTransactionFor(-1) => Got transactions: []
+2016-10-18 15:37:56:070: INFO => createAccount(coolmarkus, tjuvbank, CHECK)
+2016-10-18 15:37:56:078: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Person gotten (key: 6)
+2016-10-18 15:37:56:086: INFO => createAccount(coolmarkus, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:56:092: INFO => createAccount(6, 10, CHECK)
+2016-10-18 15:37:56:256: INFO => createAccount(6, 10, CHECK) => Account created
+2016-10-18 15:37:56:262: INFO => createAccount(coolmarkus, tjuvbank, )
+2016-10-18 15:37:56:268: INFO => createAccount(coolmarkus, tjuvbank, ) => Person gotten (key: 6)
+2016-10-18 15:37:56:276: INFO => createAccount(coolmarkus, tjuvbank, ) => Bank gotten (key: 10)
+2016-10-18 15:37:56:287: INFO => createAccount(6, 10, )
+2016-10-18 15:37:56:292: ERROR => createAccount(6, 10, ) => ERROR FOUND: Type has to be CHECK or SAVINGS
+2016-10-18 15:37:56:298: INFO => createAccount(, tjuvbank, CHECK)
+2016-10-18 15:37:56:305: INFO => createAccount(, tjuvbank, CHECK) => Person not found
+2016-10-18 15:37:56:310: INFO => createAccount(coolmarkus, , CHECK)
+2016-10-18 15:37:56:317: INFO => createAccount(coolmarkus, , CHECK) => Person gotten (key: 6)
+2016-10-18 15:37:56:323: INFO => createAccount(coolmarkus, , CHECK) => Bank not found
+2016-10-18 15:37:56:329: INFO => createAccount(coolmarkus, tjuvbank, null)
+2016-10-18 15:37:56:334: INFO => createAccount(coolmarkus, tjuvbank, null) => One of the parameters was not defined
+2016-10-18 15:37:56:340: INFO => createAccount(null, tjuvbank, CHECK)
+2016-10-18 15:37:56:345: INFO => createAccount(null, tjuvbank, CHECK) => One of the parameters was not defined
+2016-10-18 15:37:56:351: INFO => createAccount(coolmarkus, null, CHECK)
+2016-10-18 15:37:56:355: INFO => createAccount(coolmarkus, null, CHECK) => One of the parameters was not defined
+2016-10-18 15:37:56:365: INFO => findAccountsFor(Q)
+2016-10-18 15:37:56:380: INFO => findAccountsFor(Q) => Person gotten (key: 5)
+2016-10-18 15:37:56:385: INFO => findAccountsFor(5)
+2016-10-18 15:37:56:556: INFO => findAccountsFor(5) => Found accounts: []
+2016-10-18 15:37:56:563: INFO => createAccount(Q, tjuvbank, CHECK)
+2016-10-18 15:37:56:570: INFO => createAccount(Q, tjuvbank, CHECK) => Person gotten (key: 5)
+2016-10-18 15:37:56:577: INFO => createAccount(Q, tjuvbank, CHECK) => Bank gotten (key: 10)
+2016-10-18 15:37:56:581: INFO => createAccount(5, 10, CHECK)
+2016-10-18 15:37:56:597: INFO => createAccount(5, 10, CHECK) => Account created
+2016-10-18 15:37:56:602: INFO => findAccountsFor(Q)
+2016-10-18 15:37:56:609: INFO => findAccountsFor(Q) => Person gotten (key: 5)
+2016-10-18 15:37:56:613: INFO => findAccountsFor(5)
+2016-10-18 15:37:56:619: INFO => findAccountsFor(5) => Found accounts: [1]
+2016-10-18 15:37:56:626: INFO => findAccountsFor(null)
+2016-10-18 15:37:56:634: INFO => findAccountsFor(null) => Person not found
+2016-10-18 15:37:56:644: INFO => findAccountsFor(BANANMANNEN)
+2016-10-18 15:37:56:652: INFO => findAccountsFor(BANANMANNEN) => Person not found

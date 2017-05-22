@@ -1,0 +1,14 @@
+{
+    "banks": [
+        {"name": "SWEDBANK", "key": "1"},
+        {"name": "IKANOBANKEN", "key": "2"},
+        {"name": "JPMORGAN", "key": "3"},
+        {"name": "NORDEA", "key": "4"},
+        {"name": "CITIBANK", "key": "5"},
+        {"name": "HANDELSBANKEN", "key": "6"},
+        {"name": "SBAB", "key": "7"},
+        {"name": "HSBC", "key": "8"},
+        {"name": "NORDNET", "key": "9"},
+        {"name": "tjuvbank", "key": "10"}
+    ]
+}
