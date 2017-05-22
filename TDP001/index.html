@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>maxbr431 Blogg</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blogg.css">
+  </head>
+  <body>
+    <header>
+      Maximilian Bragazzi Ihrén (maxbr431) TDP001<br>Blogg
+    </header>
+    <br>
+    <section id="articleTitleContainer">
+      Introlabb uppgift
+    </section>
+    <section id="articleTextContainer">
+      <h3>1. Börja först med att skapa alla filerna som kommer att användas:</h3>
+      touch nummer.txt<br>
+      touch nummerP.txt<br>
+      touch namn.txt<br>
+      touch slutresultat.txt<br>
+      
+      <h3>2. Kopiera allt från kolumn 3 och framåt (dvs alla siffror) från resultat.txt till nummer.txt</h3>
+      cut resultat.txt -f3- -d" "  > nummer.txt<br>
+      
+      <h3>3. Skriv över alla ändelser (representerade av '$') på alla rader i nummer.txt till ++p, och skicka resultatet till nummerP.txt</h3>
+      sed 's/$/++p/g' nummer.txt > nummerP.txt<br>
+      
+      <h3>4. Loopa igenom hela nummerP.txt och skicka varje rad till dc, och skicka sedan allt tillbaka till nummer.txt</h3>
+      (echo $(cat nummerP.txt) | dc) > nummer.txt<br>
+      
+      <h3>5. Kopiera kolumn 1 och 2 (dvs alla för- och efternamn) från resultat.txt till namn.txt</h3>
+      cut resultat.txt -f1-2 -d" "  > namn.txt<br>
+      
+      <h3>6. Lägg ihop nummer.txt och namn.txt i resultat.txt</h3>
+      paste nummer.txt namn.txt > resultat.txt<br>
+      
+      <h3>7. Sortera resultat.txt efter nummer, och sätt det så det blir minskande ordning, och skicka resultatet till slutresultat.txt</h3>
+      sort resultat.txt -n -r > slutresultat.txt<br>
+
+      <h3>8. Ta bort alla filer som inte behövs längre</h3>
+      rm namn.txt<br>
+      rm nummerP.txt<br>
+      rm nummer.txt<br>
+      rm resultat.txt<br>
+
+      <h3>9. Skriv ut slutresultat.txt</h3>
+      cat slutresultat.txt<br>
+    </section>
+    <br>
+    <nav>
+      <a href="archive.html">Archives</a>
+    </nav>
+  </body>
+</html>

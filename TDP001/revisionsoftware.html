@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>maxbr431 Blogg</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blogg.css">
+  </head>
+  <body>
+    <header>
+      Maximilian Bragazzi Ihrén (maxbr431) TDP001<br>Blogg
+    </header>
+    <br>
+    <section id="articleTitleContainer">
+      Versionshantering
+    </section>
+    <section id="articleTextContainer">
+      <h2><u>Subversion</u></h2>
+      <p>Subversion är ett server-klient system, vilket betyder att man jobbar på sin egen maskin, och sedan kopplar man sig till en specificerad server varje gång man vill uppdatera sin version av det man håller på att skriva.</p>
+
+      <p>Subversion i sig kom till under år 2000, där programmerarna ville bygga ett open-source system som liknade det då använda CVS, men fixade många buggar och lade till nya funktioner som de tyckte att CVS saknade. Version 1.0 lanserade i 2004, och senare i 2009 blev de accepterade till Apache Incubator (där Apache har sina open-source projekt som är planerade att bli fulla Apace program). Det nådde top-level status bara 4 månader senare.</p>
+
+      <u>Fördelar:</u>
+      <ol>
+	<li>Har varit med länge, finns mycket dokumentation och de flesta frågor finns besvarade bara en Google-sökning iväg</li>
+	<li>Sammarbete väldigt enkelt</li>
+      </ol>
+      <u>Nackdelar:</u>
+      <ol> 
+	<li>Bara en server (vad händer om den går ner?)</li>
+	<li>Långsamt i större projekt</li>
+	<li>Inget arbete offline, allt sker online</li>
+      </ol>
+      
+      <h2><u>Git</u></h2>
+      <p>Git, till skillnad från Subversion, är ett distribuerande system, eller ett peer to peer system. När man då jobbar med Git så hämtar man hela arkivet man ska jobba med (arkivet kan delas upp i mindre delar). När man då ska spara sina ändringar sitter det en projektledare som bestämmer vilka ändringar som ska vara med och vilka som inte ska med.</p> 
+
+      <p>Git började utvecklas när utvecklarna bakom Linux-kärnan gav upp på ett tidigare projekt, BitKeeper, vilket de gjorde på grund av personen som håll copyright på BitKeeper, som då hade tagit bort gratis användning av programvaran.<br>
+	Linus Torvalds satte då ut att hitta ett system som man kunde använda som BitKeeper, men inget av de han hittade uppfyllde de krav han hade, så han började på ett eget system: Git. Det skulle vara väldigt bra att hantera korruption, och Linus har sagt att ett av design kriterierna var att göra den exakta motsatsen till vad CVS hade gjort.<br>
+	Gits utvecklande började i April 2005, och innan ens månaden var slut så hade han uppnått sina mål.</p>
+
+      <u>Fördelar:</u>
+      <ol>
+	<li>Snabbt</li>
+	<li>Användarvänligt</li>
+      </ol>
+
+      <u>Nackdelar:</u>
+      <ol>
+	<li>Utvecklas framförallt för Linux, så t.ex. Windowssupport ligger efter.</li>
+	<li>Ingen sorts IDE eller Explorer integration.</li>
+      </ol>
+      
+      <h2><u>RCS</u></h2>
+      <p>RCS är ett lokalt system, det vill säga att allt sker på samma maskin, och att alla måste använda samma dator.</p>
+
+      <p>RCS släpptes 1982 av Walter Tichy medans han gick på universitet, som ett gratis alternativ till det då populära SCCS, och är nu del av GNU-projektet, där det uppdateras fortfarande.</p>
+
+      <u>Fördelar:</u>
+      <ol>
+	<li>Enkelt att använda när det bara behövs användas av en person, som till exempel någon form av en config-fil.</li>
+	<li>Alla sparade filer är lätta att hitta.</li>
+      </ol>
+      <u>Nackdelar:</u>
+      <ol>
+	<li>Är 100% offline, kan inte jobba med andra datorer</li>
+	<li>Finns inget skydd på versionsfilerna.</li>
+      </ol>
+    </section>
+    <br>
+    <nav>
+      <a href="archive.html">Archives</a>
+    </nav>
+  </body>
+</html>
