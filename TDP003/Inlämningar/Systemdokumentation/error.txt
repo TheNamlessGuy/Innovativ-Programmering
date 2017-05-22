@@ -1,0 +1,5 @@
+title '/error/error_type' eller Error
+
+Hemsida->Presentationslager: Error + Felkod ('/error/error_type')
+Presentationslager->Presentationslager: Gör om kod till meddelande
+Presentationslager->Hemsida: Felmeddelande

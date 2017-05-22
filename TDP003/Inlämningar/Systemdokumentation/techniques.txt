@@ -1,0 +1,21 @@
+title '/techniques' eller Techniques
+
+Hemsida->Presentationslager: Techniques ('/techniques')
+Presentationslager->Datalager: load()
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+Presentationslager->Datalager: get_technique_stats()
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+
+Presentationslager->Hemsida: All data

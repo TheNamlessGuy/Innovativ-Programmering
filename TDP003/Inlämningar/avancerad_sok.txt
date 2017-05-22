@@ -1,0 +1,20 @@
+title Advanced search
+
+Användare->Hemsida: Sökdata
+Hemsida->Presentationslager: Söksidan ('/list')
+Presentationslager->Hemsida: Sökdata request
+alt Returnerar Data
+    Hemsida->Presentationslager: Sökdata
+else Returnerar None
+    Hemsida->Presentationslager: None
+    Presentationslager->Presentationslager: Default-värden
+end
+Presentationslager->Datalager: search(Sökdata)
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+Presentationslager->Hemsida: Sökresultat

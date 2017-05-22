@@ -1,0 +1,13 @@
+title Översikt
+
+Användare->Hemsida:
+Hemsida->Presentationslager:
+Presentationslager->Datalager:
+Datalager->Datafil:
+Datafil->Datalager:
+Datalager->Presentationslager:
+Presentationslager->Hemsida:
+Hemsida->Användare:
+note over Presentationslager: flask_portfolio.py
+note over Datalager: data.py
+note over Datafil: data.json

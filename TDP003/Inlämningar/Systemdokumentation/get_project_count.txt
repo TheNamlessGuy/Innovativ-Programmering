@@ -1,0 +1,12 @@
+title get_project_count()
+
+Datalager->get_project_count(): Databas
+get_project_count()->log(): Försöker hämta längden för databasen
+get_project_count()->get_project_count(): get_length(Databas)
+alt Allt gick bra
+    get_project_count()->Datalager: Antal projekt 
+    get_project_count()->log(): Hämtade längden på databasen
+else Någonting fungerade inte
+    get_project_count()->Datalager: None
+    get_project_count()->log(): Kunde inte hämta längd
+end

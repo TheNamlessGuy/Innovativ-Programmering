@@ -1,0 +1,21 @@
+title '/project/id' eller Project page
+
+Hemsida->Presentationslager: Project page + ID ('/project/id')
+Presentationslager->Datalager: load()
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+Presentationslager->Datalager: get_project(id)
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+
+Presentationslager->Hemsida: All data

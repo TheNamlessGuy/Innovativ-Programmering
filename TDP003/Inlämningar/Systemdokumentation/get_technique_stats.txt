@@ -1,0 +1,26 @@
+title get_technique_stats()
+
+Datalager->get_technique_stats(): Databas
+get_technique_stats()->log(): Försöker hämta alla använda tekniker och dess projekt
+get_technique_stats()->get_techniques(): Hämta alla tekniker
+get_techniques()->get_technique_stats(): Alla använda tekniker
+loop Genom använda tekniker
+    get_technique_stats()->get_projects_with_technique(): Loopande teknik
+    get_projects_with_technique()->log(): Försöker hämta projekt som använder en särskild teknik
+    loop Använda tekniker
+        get_projects_with_technique()->get_projects_with_technique(): Om teknik i projektets tekniker, addera projekt till returneringslista.
+    end
+    get_projects_with_technique()->log(): Hämtade alla projekt som använde en särskilld teknik
+    get_projects_with_technique()->get_technique_stats(): Returneringslista
+end
+get_technique_stats()->sort_technique_stats(): Lista av projekt
+loop Projektlista
+    sort_technique_stats()->sort_technique_stats(): Sorterar lista
+end
+sort_technique_stats()->get_technique_stats(): Returneringslista
+get_technique_stats()->log(): Hämtade alla använda tekniker och dess projekt
+alt Allt gick bra
+    get_technique_stats()->Datalager: All data
+else Något blev fel
+    get_technique_stats()->Datalager: None
+end

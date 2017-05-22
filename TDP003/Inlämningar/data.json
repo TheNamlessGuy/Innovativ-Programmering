@@ -1,0 +1,20 @@
+[
+  {
+    "project_name": "Python Calculator",
+    "project_no": 1,
+    "start_date": "2011-10-11",
+    "end_date": "2012-10-11",
+    "course_id": "TDP002",
+    "course_name": "Imperativ Programmering",
+    "academic_credits": 6,
+    "techniques_used": [
+      "python"
+    ],
+    "short_description": "My first Python project.<br>A simple calculator.",
+    "long_description": "<p>This was my first Python project. It's a simple calculator that reads in plus ('+'), minus ('-'), multiplied ('*'), divided ('/') and two numbers. It then calculates the two numbers depending on the value of the symbol the user entered.</p><p>It took me a full year to complete the project due to an overload of work. Work was all like: 'Ooooh, come here! Let's do some more menial tasks', and I was like 'No, work! I don't want to! I want to program my calculator!'. But, alas, work goes first due to me needing a salary to eat and pay rent and such.</p><p>Oh no. I'm starting to use this as some sort of blog, aren't I? That's not good... I mean I need to show this site to possible people who would like to hire me! MOOOOOOOM! How do I delete stuff off of my website, again?</p><p>...</p><p>She's not answering... Why am I still typing?!</p><p><em>Note</em></p><p>Due to the amazing Flask-portfolio both scientists and doctors were easily able to find the master of calulators. With the newly-found power of the calculator doctors could finally find a cure for several deadly diseases, while scientists managed to calculate solutions for the world's largest energy problems.</p><p>The founder of the calculator was crowned both king and queen of Python and earned enough money to move out of the mother's basement. The founder - or master - now lives high up in the mountains where small groups of trainees are sent to learn the art of Python...</p>",
+    "small_image": "calc_terminal.png",
+    "big_image": "calc_code.png",
+    "group_size": 1,
+    "external_link": "/project/1"
+  }
+]

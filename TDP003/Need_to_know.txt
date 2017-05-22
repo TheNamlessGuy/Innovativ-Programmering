@@ -1,0 +1,19 @@
+Startsida:
+	Hur man länkar saker
+	Hur man hämtar info (bilder, text, etc)
+	Hur man skapar en sökruta
+	Hur man söker
+Söksida:
+	Hur man tar datan från sökrutorna
+	Hur man kollar om en knapp är tryckt
+	Hur man kollar checkboxar
+	Hur man listar infon
+Projektsida:
+	Hur man tar fram infon
+	Hur man listar infon
+Tekniksida:
+	Hur man länkar till söksidan med ett sökobjekt
+Bonusgrejer:
+	Hur man tar fram random info
+	Fler sökgrejer
+	Bättre tekniksida

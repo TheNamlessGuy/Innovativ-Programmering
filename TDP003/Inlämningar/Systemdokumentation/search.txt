@@ -1,0 +1,35 @@
+title search()
+
+Datalager->search(): Databas + Sökdata
+search()->log(): Försöker söka efter sökdata
+loop Genom databas
+    search()->search(): Om sökdata finns i något av projektets fält
+    search()->technique_check(): Projektet + sökdata för tekniker
+    alt Projektet passerar kollen
+        technique_check()->search(): True
+        technique_check()->log(): Teknik-kollen passerades för sökdatat
+        search()->fields_check(): Projektet + sökdata för fields
+        alt Projektet passerar kollen
+            fields_check()->search(): True
+            fields_check()->log(): Fields-kollen passerades för sökdata
+            search()->search(): Addera projekt till returneringslista
+        else Projektet passerar ej kollen
+            fields_check()->search(): False
+            fields_check()->log(): Fields-kollen passerades ej
+        end
+    else Projektet passerar ej kollen
+        technique_check()->search(): False
+        technique_check()->log(): Teknik-kollen passerades ej
+    end
+end
+search()->sort_search_list(): Sökresultat + Sökdata för sortering
+loop Genom sökdata
+    sort_search_list()->sort_search_list(): Sorterar sökresultat
+end
+sort_search_list()->search(): Sökresultat (sorterat)
+search()->log(): Har fått sökresultat för sökdata
+alt Allt gick bra
+    search()->Datalager: Sökresultat (returneringslista)
+else Något gick fel
+    search()->Datalager: None
+end

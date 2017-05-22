@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+{% block contents %}
+{% autoescape false %}
+<div class="mainWindow">
+  <div class="projectInfo">
+    {% if db_len >= 1 %}
+    <a href="/project/{{projects[0]['project_no']}}">
+      <div class="projectText"><h1>{{projects[0]['project_name']}}</h1>
+	<p>{{projects[0]['short_description']}}</p>
+	<h6>
+	  {% for technique in projects[0]['techniques_used'] %}
+	  <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+	  {% endfor %}
+	</h6>
+      </div>
+    </a>
+    <a href="/project/{{projects[0]['project_no']}}">
+      {% if projects[0]['small_image'].startswith("http://") or projects[0]['small_image'].startswith("static/images/") %}
+      <img id="projectImage" src="{{projects[0]['small_image']}}" alt="">
+      {% else %}
+      <img id="projectImage" src="/static/images/{{projects[0]['small_image']}}" alt="">
+      {% endif %}
+    </a>
+    {% endif %}
+  </div>
+  <br>
+  {% if db_len >= 2 %}
+  <div class="miniProject" align="left">
+    <a href="/project/{{projects[1]['project_no']}}">
+      {% if projects[1]['small_image'].startswith("http://") or projects[1]['small_image'].startswith("static/images/") %}
+      <img id="projectImage" src="{{projects[1]['small_image']}}" alt="">
+      {% else %}
+      <img id="projectImage" src="/static/images/{{projects[1]['small_image']}}" alt="">
+      {% endif %}
+    </a>
+    <br>
+    <div class="miniProjectText">
+      <a href="/project/{{projects[1]['project_no']}}">
+      <h3>{{projects[1]['project_name']}}</h3>
+      <p>{{projects[1]['short_description']}}</p>
+	<h5>
+	  {% for technique in projects[1]['techniques_used'] %}
+	  <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+	  {% endfor %}
+	</h5>
+      </a>
+    </div>
+  </div>
+  {% endif %}
+  {% if db_len >= 3 %}
+  <div class="miniProject" align="center">
+    <a href="/project/{{projects[2]['project_no']}}">
+      {% if projects[2]['small_image'].startswith("http://") or projects[2]['small_image'].startswith("static/images/") %}
+      <img id="projectImage" src="{{projects[2]['small_image']}}" alt="">
+      {% else %}
+      <img id="projectImage" src="/static/images/{{projects[2]['small_image']}}" alt="">
+      {% endif %}
+    </a>
+    <br>
+    <div class="miniProjectText">
+      <a href="/project/{{projects[2]['project_no']}}">
+      <h3>{{projects[2]['project_name']}}</h3>
+      <p>{{projects[2]['short_description']}}</p>
+	<h5>
+	  {% for technique in projects[2]['techniques_used'] %}
+	  <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+	  {% endfor %}
+	</h5>
+      </a>
+    </div>
+  </div>
+  {% endif %}
+  {% if db_len >= 4 %}
+  <div class="miniProject" align="right">
+    <a href="/project/{{projects[3]['project_no']}}">
+      {% if projects[3]['small_image'].startswith("http://") or projects[3]['small_image'].startswith("static/images/") %}
+      <img id="projectImage" src="{{projects[3]['small_image']}}" alt="">
+      {% else %}
+      <img id="projectImage" src="/static/images/{{projects[3]['small_image']}}" alt="">
+      {% endif %}
+    </a>
+    <br>
+    <div class="miniProjectText">
+      <a href="/project/{{projects[3]['project_no']}}">
+      <h3>{{projects[3]['project_name']}}</h3>
+      <p>{{projects[3]['short_description']}}</p>
+	<h5>
+	  {% for technique in projects[3]['techniques_used'] %}
+	  <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+	  {% endfor %}
+	</h5>
+      </a>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endautoescape %}
+{% endblock %}

@@ -1,0 +1,7 @@
+title log()
+
+Datalager->log(): Sträng som ska loggas
+log()->log(): Hämtar nuvarande systemtid\n(Format: År-Månad-Dag\n Timme:Minut:Sekund)
+log()->log.txt: Öppna fil
+log()->log.txt: Skriv in strängen\ntillsammans med tid
+log()->log.txt: Stäng fil

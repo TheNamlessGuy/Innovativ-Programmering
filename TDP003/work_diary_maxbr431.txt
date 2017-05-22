@@ -1,0 +1,58 @@
+Dagbok TDP003
+
+Ons – 10/9 2014
+Skissade upp väldigt basic bilder av hur hemsidan ska se ut, för att veta vad vi ska uppnå. Började skriva på projektplaneringen.
+
+Tors - 11/9 2014
+Skrev klart och skickade in projektplaneringen. Skrev i totalt cirka 2,5 timme. Började lite lätt med datalagret, då vi inte hade papper för att rita LoFi-prototypen.
+
+Mån – 15/9 2014
+Bestämde oss för att inte rita LoFi på papper, utan att göra en HTML mall. Började jobba med den, blev klara med menyraden minus sökfältet.
+
+Tis – 16/9 2014
+Gjorde hela LoFi-prototypen. Försökte oss på GoMockingbird men förstod inte hur det fungerade. Skrev allt i HTML + CSS för hand istället (när CSS:en var klar gick de andra sidorna snabbt)
+
+Ons – 17/9 2014
+Började med datalagret. Blev klara med allt utom själva sökfunktionen, men planerade ut hur den skulle fungera. Satte upp Subversionsystemet, tog ett tag men förstod till slut.
+
+Tors – 18/9 2014
+Vi skickade in LoFi-prototypen, satte width på sidan lite högre så det skulle funka på fler resolutions.
+
+Mån - 22/9 2014
+Skrev klart sökfunktionen i datalagret, blev lika mycket kod som alla de andra funktionerna kombinerat. Började kolla upp Flask och hur det används, men förstod inte mycket.
+
+Ons – 24/9 2014
+Började med Flask hemsidan, använde mallarna vi använt för LoFi:n till mallar. Blev klara med Techniques, Project/ID och index (fast kan snyggas till). Märkte att vi missat att datalagret ska logga allt den gör, så lade till det. Lade även till koderna som man skulle ha, även om vi hade protester.
+
+Tors – 25/9 2014
+Vi hade missat småsaker i vårt datalager som vi fixade, så som att get_technique_stats skulle sorteras efter namn, och att om man söker efter None som sökvärde ska den returnera allt, inte inget. 
+
+Fre – 26/9 2014
+Redovisade vårt datalager, gick bra. Fick godkänt, men sa att vi skulle förbättra vår sökfunktion och sorteringsalgoritmer. 
+
+Mån – 29/9 2014
+Gjorde om bilderna till sidan så att de fadeade ut till bakgrunden. Lade även till rutan bakom sökrutan som en  bild, istället för en div.
+
+Tors – 2/10 2014
+Skrev JSON-filen vi skulle lämna in, och förbättrade sökfuntionen mycket (var mycket enklare än det verkade först. Vi hade fått för oss att man skulle skicka in hela presentationslagret, men så var det ju inte!)
+
+Mån – 7/10 2014
+Vi bestämde vem som skulle skriva användarmanual/installationsmanual, och att vi skulle vara klara tills på Torsdag. Jag fick då installationsmanualen.
+
+Tis – 8/10 2014
+Skrev klart det mesta på installationsmanualen.
+
+Ons – 9/10 2014
+Skrev klart installationsmanualen. Fick skriva om lite av det jag hade skrivit dagen innan, men det gick bra.
+
+Tis – 14/10 2014
+Bestämde oss för hur och när vi skulle jobba med systemdokumentationen, och att vi skulle börja dagen efter.
+
+Ons - 15/10 2014
+Vi började att jobba med systemdokumentationen. Det var mycket mer komplicerat och mycket jobbigare än vi hade trott. Att skriva alla de där sekvensdiagramen som vi gjorde blev väldigt tråkigt efter ett tag. Det var ju bara krav på att skriva ett, men vi kände att det var enklare att förklara koden när man hade en sån bild framför sig.
+
+Tors - 16/10 2014
+Vi blev nästan klara med systemdokumentationen under lektionstiden, men vi fick jobba lite övertid. Vi blev dock klara relativt snabbt.
+
+Fre - 17/10 2014
+Vi skrev in några småsaker vi hade missat till Systemdokumentationen (att man skulle hänvisa till API:n, etc), och skickade sedan in den.

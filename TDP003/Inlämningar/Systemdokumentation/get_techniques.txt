@@ -1,0 +1,15 @@
+title get_techniques()
+
+Datalager->get_techniques(): Databas
+get_techniques()->log(): Försöker hämta alla använda tekniker
+loop Genom databas
+    get_techniques()->get_techniques(): Addera tekniker till returneringslista
+end
+alt Allt gick bra
+    get_techniques()->get_techniques(): Sort(returneringslista)
+    get_techniques()->Datalager: Tekniker (returneringslista)
+    get_techniques()->log(): Hämtade alla använda tekniker
+else Någonting fungerade inte
+    get_techniques()->Datalager: None
+    get_techniques()->log(): Kunde inte hämta alla använda tekniker
+end

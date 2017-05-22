@@ -1,0 +1,11 @@
+title load()
+
+load()->log(): Försöker öppna fil
+load()->+Databas: open(fil)
+alt Allt gick bra
+    Databas->load(): Data
+    load()->log(): Öppnade fil
+else Någonting fungerade inte
+    Databas->load(): None
+    load()->log(): Kunde inte öppna fil
+end

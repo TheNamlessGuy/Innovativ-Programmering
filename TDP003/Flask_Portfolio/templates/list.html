@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block contents %}
+{% autoescape false %}
+<div class="mainWindow">
+  <div class="advancedSearchBox">
+    <form action="/list">
+      <input type="text" name="searchBox" placeholder="Search...">
+      <select name="sort_order">
+	<option value="desc">Descending</option>
+	<option value="asc">Ascending</option>
+      </select>
+      <select name="sort_by">
+	<option value="start_date">Sort by</option>
+	<option value="project_name">Project Name</option>
+	<option value="start_date">Start Date</option>
+	<option value="end_date">End Date</option>
+	<option value="course_id">Course ID</option>
+	<option value="course_name">Course name</option>
+	<option value="academic_credits">Academic Credits</option>
+	<option value="short_description">Short description</option>
+	<option value="long_description">Long description</option>
+	<option value="group_size">Group size</option>
+      </select>
+      <p>Search in: (leave empty for all)<br>
+	<input type="checkbox" name="search_fields" value="project_name">Project Name
+	<input type="checkbox" name="search_fields" value="start_date">Start date
+	<input type="checkbox" name="search_fields" value="end_date">End date
+	<input type="checkbox" name="search_fields" value="course_id">Course ID
+	<input type="checkbox" name="search_fields" value="course_name">Course name
+	<input type="checkbox" name="search_fields" value="academic_credits">Academic Credits
+	<input type="checkbox" name="search_fields" value="short_description">Short description
+	<input type="checkbox" name="search_fields" value="long_description">Long description
+	<input type="checkbox" name="search_fields" value="group_size">Group Size
+      </p>
+      <p>In what techniques to search: (leave empty for all)<br>
+	{% for technique in techniques_used %}
+	<input type="checkbox" name="techniques", value="{{technique}}">{{technique}}
+	{% endfor %}
+      </p>
+      <button type="submit">Advanced Search</button>
+    </form>
+  </div>
+  <br>
+  {% if search_return|length == 0 %}
+  <h1>Inga sökresultat hittades</h1>
+  {% else %}
+  {% for project in search_return%}
+  <div class="projectInfo">
+    <a href="/project/{{project['project_no']}}">
+      {% if project['small_image'].startswith("http://") or project['small_image'].startswith("static/images/") %}
+      <img id="projectImage" src="{{project['small_image']}}" alt="">
+      {% else %}
+      <img id="projectImage" src="/static/images/{{project['small_image']}}" alt="">
+      {% endif %}
+    </a>
+    <div class="projectTextList">
+      <a href="/project/{{project['project_no']}}">
+      <h3>{{project['project_name']}}</h3>
+      <p>{{project['short_description']}}</p>
+      </a>
+      <h5>
+      {% for technique in project['techniques_used'] %}
+      <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+      {% endfor %}
+      </h5>
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+{% endautoescape %}
+{% endblock %}

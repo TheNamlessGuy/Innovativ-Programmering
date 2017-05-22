@@ -1,0 +1,25 @@
+Hittade ett projekt med felformaterad sökväg. Visar då ingen bild. (Det enda felformaterade skulle vara ett projekt som börjar med "/" eller "images")
+
+Gick in på projektsidan, skrev in ett ID som inte fanns
+Resultat:
+	Felsidan kommer upp med ett meddelande om att projektet inte fanns
+
+Försökte söka på något med ett '"' i, i ett försök att stänga av strängen för tidigt
+Resultat:
+	Den sökte som den skulle, men inget kom fram (då inget i databasen innehöll sökvärdet)
+
+Försökte söka efter utf-8 symboler (åäö/*+?, etc)
+Resultat:
+	Inget hittades (URL:en blev lite lång dock)
+
+Försökte ändra ett värde på en variabel i URL:en på /list
+Resultat:
+	Inget särskillt
+
+Försökte ändra ett namn på en variabel i URL:en på /list
+Resultat:
+	Den fick default-värdet
+
+Försökte söka på kod som skulle kunna skada systemet
+Resultat:
+	Den sökte på koden, och executade den ej

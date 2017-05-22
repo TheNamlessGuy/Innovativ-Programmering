@@ -1,0 +1,20 @@
+title '/' eller Home
+
+Hemsida->Presentationslager: Home ('/')
+Presentationslager->Datalager: load()
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+Presentationslager->Datalager:get_project_count()
+alt Returnerar Data
+    Datalager->Presentationslager: Data
+else Returnerar None
+    Datalager->Presentationslager: None
+    Presentationslager->Error: Felkod
+    Error->Hemsida: Felmeddelande
+end
+Presentationslager->Hemsida: All data

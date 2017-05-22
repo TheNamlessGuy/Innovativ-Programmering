@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block contents %}
+{% autoescape false %}
+<div class="mainWindow">
+  {% if project['big_image'].startswith("http://") or project['big_image'].startswith("static/images/") %}
+  <img id="projectImage" src="{{project['big_image']}}" alt="">
+  {% else %}
+  <img id="projectImage" src="/static/images/{{project['big_image']}}" alt="">
+  {% endif %}
+  <div class="projectTextID">
+    <h1>
+      {% if project['project_name'] %}
+      {{project['project_name']}}
+      {% else %}
+      Error: Project name missing
+      {% endif %}
+    </h1>
+    <p>
+     {% if project['long_description'] %}
+     {{project['long_description']}}
+     {% else %}
+     ERROR: Description missing
+     {% endif %}
+    </p>
+    <h5>
+      {% if project['techniques_used'] %}
+      {% for technique in project['techniques_used'] %}
+      <a href={{url_for("list", techniques=[technique])}}>#{{technique}}</a>
+      {% endfor %}</h5>
+    {% else %}
+    ERROR: Techniques missing
+    {% endif %}
+  </div>
+</div>
+{% endautoescape %}
+{% endblock %}

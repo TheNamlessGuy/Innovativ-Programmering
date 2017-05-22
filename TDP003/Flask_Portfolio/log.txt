@@ -1,0 +1,43 @@
+2014-10-22 16:39:57 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 16:39:57 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 16:39:57 | LOAD: Loaded datafile 'data.json'
+2014-10-22 16:39:57 | PROJECT COUNT: Trying to get length of database
+2014-10-22 16:39:57 | PROJECT COUNT: Got length of database. Length was '1'
+2014-10-22 16:39:57 | FLASK SERVER: Access to index page ('/') successful
+2014-10-22 16:39:57 | FLASK SERVER: Tried to access page: /favicon.ico
+2014-10-22 16:40:01 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 16:40:01 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 16:40:01 | LOAD: Loaded datafile 'data.json'
+2014-10-22 16:40:01 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 16:40:01 | GET TECHNIQUES: Got techniques used
+2014-10-22 16:40:01 | SEARCH: Trying to search for 'None'
+2014-10-22 16:40:01 | SEARCH: No techniques were provided
+2014-10-22 16:40:01 | SEARCH: No fields were provided
+2014-10-22 16:40:01 | SEARCH: Trying to sort search list
+2014-10-22 16:40:01 | SEARCH: Sorted search list
+2014-10-22 16:40:01 | SEARCH: Search for 'None' successful
+2014-10-22 16:40:01 | FLASK SERVER: Access to list/archive page ('/list') successful
+2014-10-22 16:40:05 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 16:40:05 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 16:40:05 | LOAD: Loaded datafile 'data.json'
+2014-10-22 16:40:05 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 16:40:05 | GET TECHNIQUES: Got techniques used
+2014-10-22 16:40:05 | SEARCH: Trying to search for 'this description'
+2014-10-22 16:40:05 | SEARCH: No techniques were provided
+2014-10-22 16:40:05 | SEARCH: No fields were provided
+2014-10-22 16:40:05 | SEARCH: Trying to sort search list
+2014-10-22 16:40:05 | SEARCH: Sorted search list
+2014-10-22 16:40:05 | SEARCH: Search for 'this description' successful
+2014-10-22 16:40:05 | FLASK SERVER: Access to list/archive page ('/list') successful
+2014-10-22 16:40:14 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 16:40:14 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 16:40:14 | LOAD: Loaded datafile 'data.json'
+2014-10-22 16:40:14 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 16:40:14 | GET TECHNIQUES: Got techniques used
+2014-10-22 16:40:14 | SEARCH: Trying to search for '      this description'
+2014-10-22 16:40:14 | SEARCH: No techniques were provided
+2014-10-22 16:40:14 | SEARCH: No fields were provided
+2014-10-22 16:40:14 | SEARCH: Trying to sort search list
+2014-10-22 16:40:14 | SEARCH: Sorted search list
+2014-10-22 16:40:14 | SEARCH: Search for 'this description' successful
+2014-10-22 16:40:14 | FLASK SERVER: Access to list/archive page ('/list') successful

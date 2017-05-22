@@ -1,0 +1,112 @@
+#mainContainer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8FBC8F;
+    color: white;
+    padding: 15px;
+}
+#mainContainer a:link, #mainContainer a:visited, #mainContainer a:hover {
+    color: white;
+    text-decoration: none;
+}
+.menuWindow {
+    padding: 5px;
+    margin: 0 auto;
+    width: 65%;
+    background-color: #8CDD81;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.mainWindow {
+    padding: 5px;
+    margin: 0 auto;
+    width: 65%;
+    background-color: #8CDD81;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align: center;
+}
+body > div > a > img {
+   vertical-align: middle;
+}
+.searchBoxContainer{
+    vertical-align: middle;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    background-image: url("searchBoxBG.png");
+    text-align: center;
+}
+#mainContainer > .menuWindow > .searchBoxContainer > form {
+    padding-top: 40px;
+}
+.projectInfo {
+    padding: 5px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.projectText {
+    vertical-align: top;
+    padding: 5px;
+    align: center;
+    display:inline-block;
+}
+.projectInfo > a > img{
+    display: inline-block;
+    width: 400px;
+}
+
+/*index*/
+.miniProject {
+    padding: 5px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.miniProjectText {
+    font-size: 12px;
+}
+.miniProjectText > p {
+    width: 100%
+}
+.miniProject img {
+    width: 200px;
+}
+
+
+/*list*/
+.advancedSearchBox {
+    padding: 5px;
+    margin: 10px;
+    background-color: #8FBC8F;
+}
+.projectTextList {
+    width: 30%;
+    vertical-align: top;
+    padding: 5px;
+    align: center;
+    display:inline-block;
+}
+
+/*techniques*/
+.techniqueList {
+    margin: 0 auto;
+    font-size: 30px;
+    width: 50%;
+    text-align: left;
+}
+
+
+/*project*/
+#projectImage{
+    max-width:90%;
+}
+.projectTextID {
+    width: 90%;
+    vertical-align: top;
+    padding: 5px;
+    align: center;
+    display:inline-block;
+}

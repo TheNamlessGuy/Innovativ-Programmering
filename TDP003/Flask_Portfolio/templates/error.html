@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block contents %}
+{% autoescape false %}
+<div class="mainWindow">
+  <h2 style="color:red">ERROR:</h2>
+  <h4>{{ error_message }}</h4>
+  Please go back a page and try again. If this problem persists, contact the site administrator
+</div>
+{% endautoescape %}
+{% endblock %}

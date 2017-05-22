@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>maxbr431 & marle943 projektvisningssida</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style/projectsite.css">
+  </head>
+  <body id="mainContainer">
+    <div class="menuWindow">
+      <a href="/"><img src="/static/images/HomeButton.png" alt="Home"></a>
+      <a href="/list"><img src="/static/images/ArchiveButton.png" alt="Archive"></a>
+      <a href="/techniques"><img src="/static/images/TechniquesButton.png" alt="Techniques"></a>
+      <div class="searchBoxContainer">
+	<form action="/list">
+	  <input type="text" name="searchBox" style="width:50%;">
+	  <button type="submit">Search</button>
+	</form>
+      </div>
+    </div>
+    {% block contents %}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,31 @@
+title Översikt
+
+Användare->Presentationslager: '/' (Home-knapp)
+Presentationslager->+Datalager: load()
+Datalager-->-Presentationslager: Data
+Presentationslager->+Datalager: get_project_count()
+Datalager-->-Presentationslager: Nummer
+Presentationslager->Användare: Data  + Nummer
+
+Användare->Presentationslager: '/list' (Archive-knapp) + Sökdata
+Presentationslager->+Datalager: load()
+Datalager-->-Presentationslager: Data
+Presentationslager->+Datalager: techniques_used()
+Datalager-->-Presentationslager: Tekniker
+Presentationslager->+Datalager: search(Sökdata)
+Datalager-->-Presentationslager: Sökresultat
+Presentationslager->Användare: Data + Tekniker + Sökresultat
+
+Användare->Presentationslager: '/techniques' (Teknik-knapp)
+Presentationslager->+Datalager: load()
+Datalager-->-Presentationslager: Data
+Presentationslager->+Datalager: technique_stats()
+Datalager-->-Presentationslager: Tekniker + Projekt
+Presentationslager->Användare: Data  + (Tekniker + Projekt)
+
+Användare->Presentationslager: '/project/id' + id
+Presentationslager->+Datalager: load()
+Datalager-->-Presentationslager: Data
+Presentationslager->+Datalager: get_project(id)
+Datalager-->-Presentationslager: Projekt
+Presentationslager->Användare: Data  + Projekt

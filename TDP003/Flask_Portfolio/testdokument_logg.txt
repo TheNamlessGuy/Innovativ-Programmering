@@ -1,0 +1,337 @@
+1.1
+2014-10-22 14:18:28 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 14:18:28 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:18:28 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:18:28 | PROJECT COUNT: Trying to get length of database
+2014-10-22 14:18:28 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 14:18:28 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+2014-10-22 14:20:55 | FLASK SERVER: Tried to access page: /start
+*****************************************************************************
+1.2
+2014-10-22 14:26:51 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:26:51 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:26:51 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:26:51 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:26:51 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:26:51 | SEARCH: Trying to search for 'None'
+2014-10-22 14:26:51 | SEARCH: No techniques were provided
+2014-10-22 14:26:51 | SEARCH: No fields were provided
+2014-10-22 14:26:51 | SEARCH: Trying to sort search list
+2014-10-22 14:26:51 | SEARCH: Sorted search list
+2014-10-22 14:26:51 | SEARCH: Search for 'None' successful
+2014-10-22 14:26:51 | FLASK SERVER: Access to list/archive page ('/list') successful
+2014-10-22 14:27:09 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:27:09 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:27:09 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:27:09 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:27:09 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:27:09 | SEARCH: Trying to search for 'python'
+2014-10-22 14:27:09 | SEARCH: No techniques were provided
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check was successful with field 'project_name'
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Fields check was successful with field 'project_name'
+2014-10-22 14:27:09 | SEARCH: Fields check failed
+2014-10-22 14:27:09 | SEARCH: Trying to sort search list
+2014-10-22 14:27:09 | SEARCH: Sorted search list
+2014-10-22 14:27:09 | SEARCH: Search for 'python' successful
+2014-10-22 14:27:09 | FLASK SERVER: Access to list/archive page ('/list') successful
+-----------------------------------------------------------------------------
+2014-10-22 14:28:31 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:28:31 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:28:31 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:28:31 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:28:31 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:28:31 | SEARCH: Trying to search for 'aösldkfjsdjflkösjrfoiew'
+2014-10-22 14:28:31 | SEARCH: Trying to sort search list
+2014-10-22 14:28:31 | SEARCH: Sorted search list
+2014-10-22 14:28:31 | SEARCH: Search for 'aösldkfjsdjflkösjrfoiew' successful
+2014-10-22 14:28:31 | FLASK SERVER: Access to list/archive page ('/list') successful
+*****************************************************************************
+1.3
+2014-10-22 14:30:43 | FLASK SERVER: Trying to access project page ('/project/ID') with id '1'
+2014-10-22 14:30:43 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:30:43 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:30:43 | GET PROJECT: Trying to get project '1' from database
+2014-10-22 14:30:43 | GET PROJECT: Got project with id '1'
+2014-10-22 14:30:43 | FLASK SERVER: Access to project page ('/project/ID') with id '1' successful
+-----------------------------------------------------------------------------
+2014-10-22 14:31:55 | FLASK SERVER: The project id 'giagaigegaeg' is not a valid id
+*****************************************************************************
+1.4
+2014-10-22 14:33:46 | FLASK SERVER: Trying to access techniques page ('/technique')
+2014-10-22 14:33:46 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:33:46 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get technique stats
+2014-10-22 14:33:46 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:33:46 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'ada' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'ada' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'assembler' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'assembler' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'assembly' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'assembly' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'c++' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'c++' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'css' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'css' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'csv' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'csv' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'fantasi' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'fantasi' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'html' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'html' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'häfvning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'häfvning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'java' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'java' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'js' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'js' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'jäsning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'jäsning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'kaffe' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'kaffe' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'mikrokod' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'mikrokod' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'obj-c' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'obj-c' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'pascal' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'pascal' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'photoshop' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'photoshop' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'python' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'python' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'sdl' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'sdl' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'sheet punching' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'sheet punching' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'subversion' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'subversion' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'tappning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'tappning' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'vhdl' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'vhdl' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Trying to get projects where 'welding' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got projects where 'welding' was used
+2014-10-22 14:33:46 | TECHNIQUE STATS: Attempting to sort technique stats
+2014-10-22 14:33:46 | TECHNIQUE STATS: Successfully sorted technique stats
+2014-10-22 14:33:46 | TECHNIQUE STATS: Got the technique stats
+2014-10-22 14:33:46 | FLASK SERVER: Access to techniques page ('/technique') successful
+-----------------------------------------------------------------------------
+2014-10-22 14:34:19 | FLASK SERVER: Tried to access page: /technique
+*****************************************************************************
+1.5
+2014-10-22 14:43:16 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:43:16 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:43:16 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:43:16 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:43:16 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:43:16 | SEARCH: Trying to search for 'None'
+2014-10-22 14:43:16 | SEARCH: No techniques were provided
+2014-10-22 14:43:16 | SEARCH: No fields were provided
+2014-10-22 14:43:16 | SEARCH: Trying to sort search list
+2014-10-22 14:43:16 | SEARCH: Sorted search list
+2014-10-22 14:43:16 | SEARCH: Search for 'None' successful
+2014-10-22 14:43:16 | FLASK SERVER: Access to list/archive page ('/list') successful
+2014-10-22 14:43:17 | FLASK SERVER: Trying to access project page ('/project/ID') with id '13'
+2014-10-22 14:43:17 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:43:17 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:43:17 | GET PROJECT: Trying to get project '13' from database
+2014-10-22 14:43:17 | GET PROJECT: Got project with id '13'
+2014-10-22 14:43:17 | FLASK SERVER: Access to project page ('/project/ID') with id '13' successful
+-----------------------------------------------------------------------------
+2014-10-22 14:43:16 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:43:16 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:43:16 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:43:16 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:43:16 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:43:16 | SEARCH: Trying to search for 'None'
+2014-10-22 14:43:16 | SEARCH: No techniques were provided
+2014-10-22 14:43:16 | SEARCH: No fields were provided
+2014-10-22 14:43:16 | SEARCH: Trying to sort search list
+2014-10-22 14:43:16 | SEARCH: Sorted search list
+2014-10-22 14:43:16 | SEARCH: Search for 'None' successful
+2014-10-22 14:43:16 | FLASK SERVER: Access to list/archive page ('/list') successful
+2014-10-22 14:43:17 | FLASK SERVER: Trying to access project page ('/project/ID') with id '13'
+2014-10-22 14:43:17 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:43:17 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:43:17 | GET PROJECT: Trying to get project '13' from database
+2014-10-22 14:43:17 | GET PROJECT: Got project with id '13'
+2014-10-22 14:43:17 | FLASK SERVER: Access to project page ('/project/ID') with id '13' successful
+*****************************************************************************
+1.6
+2014-10-22 14:46:25 | FLASK SERVER: Tried to access page: /kjdfhsdlkfjhdsf
+-----------------------------------------------------------------------------
+2014-10-22 14:46:54 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:46:54 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:46:54 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:46:54 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:46:54 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:46:54 | SEARCH: Trying to search for 'None'
+2014-10-22 14:46:54 | SEARCH: No techniques were provided
+2014-10-22 14:46:54 | SEARCH: No fields were provided
+2014-10-22 14:46:54 | SEARCH: Trying to sort search list
+2014-10-22 14:46:54 | SEARCH: Sorted search list
+2014-10-22 14:46:54 | SEARCH: Search for 'None' successful
+2014-10-22 14:46:54 | FLASK SERVER: Access to list/archive page ('/list') successful
+*****************************************************************************
+2.1
+2014-10-22 14:49:00 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 14:49:00 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:49:00 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:49:00 | PROJECT COUNT: Trying to get length of database
+2014-10-22 14:49:00 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 14:49:00 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+
+*****************************************************************************
+2.2
+2014-10-22 14:51:59 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 14:51:59 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:51:59 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:51:59 | PROJECT COUNT: Trying to get length of database
+2014-10-22 14:51:59 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 14:51:59 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+2014-10-22 14:51:59 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 14:51:59 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:51:59 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:51:59 | PROJECT COUNT: Trying to get length of database
+2014-10-22 14:51:59 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 14:51:59 | FLASK SERVER: Access to index page ('/') successful
+*****************************************************************************
+2.3
+2014-10-22 14:55:22 | FLASK SERVER: Trying to access project page ('/project/ID') with id '42'
+2014-10-22 14:55:22 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:55:22 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:55:22 | GET PROJECT: Trying to get project '42' from database
+2014-10-22 14:55:22 | GET PROJECT: Got project with id '42'
+2014-10-22 14:55:22 | FLASK SERVER: Access to project page ('/project/ID') with id '42' successful
+-----------------------------------------------------------------------------
+2014-10-22 14:55:53 | FLASK SERVER: Trying to access project page ('/project/ID') with id '42'
+2014-10-22 14:55:53 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:55:53 | LOAD: Failed to get datafile 'data.json'
+2014-10-22 14:55:53 | FLASK SERVER: Database could not be read
+*****************************************************************************
+2.4
+2014-10-22 14:59:32 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 14:59:32 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 14:59:32 | LOAD: Loaded datafile 'data.json'
+2014-10-22 14:59:32 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 14:59:32 | GET TECHNIQUES: Got techniques used
+2014-10-22 14:59:32 | SEARCH: Trying to search for 'python'
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check was successful with field 'project_name'
+2014-10-22 14:59:32 | SEARCH: Technique check was successful with technique 'python'
+2014-10-22 14:59:32 | SEARCH: Fields check failed
+2014-10-22 14:59:32 | SEARCH: Trying to sort search list
+2014-10-22 14:59:32 | SEARCH: Sorted search list
+2014-10-22 14:59:32 | SEARCH: Search for 'python' successful
+2014-10-22 14:59:32 | FLASK SERVER: Access to list/archive page ('/list') successful
+-----------------------------------------------------------------------------
+2014-10-22 15:00:44 | FLASK SERVER: Trying to access list/archive page ('/list')
+2014-10-22 15:00:44 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:00:44 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:00:44 | GET TECHNIQUES: Trying to get techniques from database
+2014-10-22 15:00:44 | GET TECHNIQUES: Got techniques used
+2014-10-22 15:00:44 | SEARCH: Trying to search for 'sdjkalsdfhfd'
+2014-10-22 15:00:44 | SEARCH: Trying to sort search list
+2014-10-22 15:00:44 | SEARCH: Sorted search list
+2014-10-22 15:00:44 | SEARCH: Search for 'sdjkalsdfhfd' successful
+2014-10-22 15:00:44 | FLASK SERVER: Access to list/archive page ('/list') successful
+*****************************************************************************
+2.5
+2014-10-22 15:11:26 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:11:26 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:11:26 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:11:26 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:11:26 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:11:26 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+
+*****************************************************************************
+2.7
+2014-10-22 15:18:23 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:18:23 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:18:23 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:18:23 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:18:23 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:18:23 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+2014-10-22 15:19:10 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:19:10 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:19:10 | LOAD: Failed to get datafile 'data.json'
+2014-10-22 15:19:10 | FLASK SERVER: Database could not be read
+*****************************************************************************
+2.8
+2014-10-22 15:18:23 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:18:23 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:18:23 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:18:23 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:18:23 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:18:23 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+2014-10-22 15:19:10 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:19:10 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:19:10 | LOAD: Failed to get datafile 'data.json'
+2014-10-22 15:19:10 | FLASK SERVER: Database could not be read
+*****************************************************************************
+2.9
+2014-10-22 15:35:03 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:35:03 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:35:03 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:35:03 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:35:03 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:35:03 | FLASK SERVER: Access to index page ('/') successful
+2014-10-22 15:35:24 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:35:24 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:35:24 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:35:24 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:35:24 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:35:24 | FLASK SERVER: Access to index page ('/') successful
+-----------------------------------------------------------------------------
+2014-10-22 15:35:49 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:35:49 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:35:49 | LOAD: Loaded datafile 'data.json'
+2014-10-22 15:35:49 | PROJECT COUNT: Trying to get length of database
+2014-10-22 15:35:49 | PROJECT COUNT: Got length of database. Length was '14'
+2014-10-22 15:35:49 | FLASK SERVER: Access to index page ('/') successful
+2014-10-22 15:35:56 | FLASK SERVER: Trying to access index page ('/')
+2014-10-22 15:35:56 | LOAD: Trying to load datafile 'data.json'
+2014-10-22 15:35:56 | LOAD: Failed to get datafile 'data.json'
+2014-10-22 15:35:56 | FLASK SERVER: Database could not be read
+*****************************************************************************
+

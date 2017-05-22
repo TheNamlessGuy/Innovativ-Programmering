@@ -1,0 +1,14 @@
+title get_project()
+
+Datalager->get_project(): Databas + ID
+get_project()->log(): Försöker hämta ett projekt från databasen
+loop Genom databasen
+    get_project()->get_project(): Om loopande projekt-ID = ID
+    alt Allt gick bra
+        get_project()->Datalager: Projekt
+        get_project()->log(): Hämtade projekt
+    else Någonting fungerade inte
+        get_project()->Datalager: None
+        get_project()->log(): Kunde inte hämta projekt
+    end
+end

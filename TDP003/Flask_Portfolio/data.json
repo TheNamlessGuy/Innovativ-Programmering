@@ -1,0 +1,19 @@
+[
+    {
+	"project_name": "My Little Project",
+	"project_no": 1,  
+	"start_date": "1978-09-05",
+	"end_date": "2005-11-10",
+	"course_id": "COURSEID",
+	"course_name": "Name of course",
+	"short_description": "This description is short",
+	"long_description": "This description is LOOOOOOOONG",
+	"small_image": "static/images/image.jpg",
+	"big_image": "static/images/image.jpg",
+	"group_size": 1,
+	"academic_credits": "1",
+	"techniques_used": [
+	    "python"
+	]
+    }
+]
