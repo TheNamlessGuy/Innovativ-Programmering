@@ -1,0 +1,8 @@
+Minsta tal=2
+Störst=8 (Till höger om minsta)
+mellan= 2<=x<=8
+
+123
+1=nederst(minst)
+2=vänster(mellan)
+3=höger(störst)

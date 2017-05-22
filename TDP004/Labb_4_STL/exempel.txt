@@ -1,0 +1,5 @@
+Pa filen "example.txt" finns den har texten. I texten finns en del ord
+med inledande "skrap-tecken" och andra ord med avslutande
+"skrap-tecken", t.ex. fragetecken. Det finns ord-samman-sattningar och
+pastaendet att nio--fem blir 8 timmar (men egentligen blir det talet
+fjorton).
