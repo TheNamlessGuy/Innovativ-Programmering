@@ -1,0 +1,44 @@
+16.
+(165095720 * 8) / 521 = 2535059 bps (~2,54 Mbit/s)
+(165842766 * 8) / 521 = 2546529 bps (~2,55 Mbit/s)
+(165458792 * 8) / 514 = 2575234 bps (~2,58 Mbit/s)
+(16325772 * 8) / 512  = 255090  bps (~0,26 Mbit/s)
+
+TOTAL BANDWIDTH: 2535059 + 2546529 + 2575234 + 255090 = 7911912 bps (~8 Mbit/s)
+
+IS THIS FAIR: Yes, since the last file is approximately 10 times smaller than the others, and is recieving approximately 10 times less bandwidth. 
+If you take RTT into consideration, it is still fair, as the RTT is the same for all of the connections.
+
+17.
+(261319130 * 8) / 90 = 23228367 bps (~23,23 Mbit/s)
+(175995832 * 8) / 90 = 15644073 bps (~15,64 Mbit/s)
+(151894552 * 8) / 90 = 13501737 bps (~13,50 Mbit/s)
+(140388568 * 8) / 90 = 12478983 bps (~12,48 Mbit/s)
+(108610702 * 8) / 90 = 9654284  bps (~9,65  Mbit/s)
+(70644690  * 8) / 90 = 6279528  bps (~6,28  Mbit/s)
+(65744938  * 8) / 90 = 5843994  bps (~5,84  Mbit/s)
+(43212876  * 8) / 90 = 3841144  bps (~3,84  Mbit/s)
+(39222524  * 8) / 90 = 3486446  bps (~3,49  Mbit/s)
+
+TOTAL BANDWIDTH: 23228367 + 15644073 + 13501737 + 12478983 + 9654284 + 6279528 + 5843994 + 3841144 + 3486446 = 93958556 bps (~93 Mbit/s)
+
+IS THIS FAIR: Yes, because the difference in size reflects the difference in speed. In other words, (first packet size / first packet speed) ~= (second packet size / second packet speed).
+If you take RTT into consideration, however, the differences in relative speed are very different. Of course, this is to be expected, since if the RTT increases, the host has to wait a larger amount of time before sending the next packet/batch of packets.
+
+18.
+(108851134 * 8) / 58 = 15013949 bps (~15,01 Mbit/s)
+(90435681  * 8) / 58 = 12473887 bps (~12,47 Mbit/s)
+(57971584  * 8) / 53 = 8750427  bps (~8,75  Mbit/s)
+(32000012  * 8) / 29 = 8827589  bps (~8,82  Mbit/s)
+(32557334  * 8) / 35 = 7441676  bps (~7,44  Mbit/s)
+(27099361  * 8) / 31 = 6993383  bps (~6,99  Mbit/s)
+(26329578  * 8) / 31 = 6794729  bps (~6,79  Mbit/s)
+(38834490  * 8) / 56 = 5547784  bps (~5,55  Mbit/s)
+(23571761  * 8) / 35 = 5387831  bps (~5,39  Mbit/s)
+(36252962  * 8) / 55 = 5273158  bps (~5,27  Mbit/s)
+
+IS THIS FAIR: It is difficult to determine whether this is fair or not, as the data presented is for 10 different people. There are a lot of variables that could determine whether it is fair or not, such as different internet speeds. If we however assume that all the conditions are the same, the speeds are not fair, seeing as the speed is not relative to the size of the file/packet downloaded.
+If you also take RTT into consideration, it is still unfair, since even when taking that into consideration, the differences in relativity are very different.
+
+Discussion: 
+Different connection types require largely different thinking patterns about TCP fairness, since you have to take RTT and other things into consideration when determining whether or not it is, in fact, fair.

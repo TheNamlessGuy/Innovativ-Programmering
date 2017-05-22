@@ -1,0 +1,9 @@
+1. Our browser runs HTTP 1.1, as seen by checking the first GET package, and checking the "HTTP/1.1" part.
+The server is also running 1.1, as seen by the response from that package.
+The HTTP version is appended in every HTTP package, but we saw it in the first two.
+
+2. The browser indicates that it only accepts American and British English. You can see this by checking the Accept-Language tag under the HTTP message display.
+The browser also provides the browser's name and version, the user's operating system, operating system version and operating system language. Also indicates what charsets the user is accepting, and what types of websites the browser supports.
+
+3. Our IP address is 192.168.1.102, as you can see in the "Source"-column for the packages sent by our computer.
+The server's IP is 128.119.245.12, as you can see in the "Source"-column for the packages recieved by our computer.

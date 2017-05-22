@@ -1,0 +1,4 @@
+20. When obtaining multiple files, a connection will send a lot of extra packages if the connection is opened and closed for each file gotten. However, if you keep the connection open until packages haven't been recieved for a certain amount of time, the file transfers will go by much faster.
+
+Connection: close is the first scenario, and should be used for simple ASCII websites (for example)
+Connection: Keep-alive should be used for most modern websites, since you usually have to get more than one thing from them.

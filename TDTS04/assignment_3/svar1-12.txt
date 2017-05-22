@@ -1,0 +1,102 @@
+1.
+First = 4
+Last = 197
+
+2.
+IP: 192.168.1.102
+Source port: 1161
+Dest port: 80
+
+3.
+IP: 128.119.245.12
+Source port: 80
+Dest port: 1161
+
+4.
+The SYN flag under the "flags" part of the packet identifies it as a SYN segment.
+Sequence number: 0
+
+5.
+Seq: 0
+Ack: 1 (seq + 1, otherwise: length of recieved packet + seq)
+The SYN and ACK flags indicate that the segment is a SYNACK segment.
+
+6.
+Seq: 1 (Packet 4)
+
+7.
+Packet 1: 1, 0.026477
+Packet 2: 566, 0.041737
+Packet 3: 2026, 0.054026
+Packet 4: 3486, 0.054690
+Packet 5: 4946, 0.077405
+Packet 6: 6406, 0.078157
+
+ACK 1: 0.053937
+ACK 2: 0.077294
+ACK 3: 0.124085
+ACK 4: 0.169118
+ACK 5: 0.217299
+ACk 6: 0.267802
+
+RTT 1: 0.053937 - 0.026477 = 0.02746
+RTT 2: 0.077294 - 0.041737 = 0.035557
+RTT 3: 0.124085 - 0.054026 = 0.070059
+RTT 4: 0.169118 - 0.054690 = 0.114428
+RTT 5: 0.217299 - 0.077405 = 0.139894
+RTT 6: 0.267802 - 0.078157 = 0.189645
+
+EstRTT calc: (1 - a) * OldRTT + a * (ACK_rcv_time - pkt_snt_time)
+a = 0.125
+
+EstRTT 1: 0.02746
+       (~27.46ms)
+EstRTT 2: (1 - 0.125) * 0.02746 + 0.125 * (0.035557) = 0.028472125
+       (~28.47ms)
+EstRTT 3: (1 - 0.125) * 0.028472125 + 0.125 * (0.070059) = 0.033670484375
+       (~33.67ms)
+EstRTT 4: (1 - 0.125) * 0.033670484375 + 0.125 * (0.114428) = 0.043765173828125
+       (~43.77ms)
+EstRTT 5: (1 - 0.125) * 0.043765173828125 + 0.125 * (0.139894) = 0.05578127709960937
+       (~55.78ms)
+EstRTT 6: (1 - 0.125) * 0.05578127709960937 + 0.125 * (0.189645) = 0.07251424246215821
+       (~72.51ms)
+
+8.
+Packet 1: 619 (565 data + header and other info)
+Packet 2: 1514 (1460 data + header and other info)
+Packet 3: 1514 (1460 data + header and other info)
+Packet 4: 1514 (1460 data + header and other info)
+Packet 5: 1514 (1460 data + header and other info)
+Packet 6: 1514 (1460 data + header and other info)
+
+9.
+5840 bytes is the advertised buffer space.
+This grows to a max of 62780.
+The sender is never throttled.
+
+10.
+No, there are not.
+We checked if the Ack-value was the same any two times. It was not.
+The last Ack (packet 206) is for the HTTP 200 OK message, and is therefore not part of the calculation.
+
+11.
+Usually acks 1460, the bytes received by the packet the ACK is meant for.
+Yes, at (possibly amongst others) packet 61 in the Wireshark trace. The ACK increase is 2920 (1460 * 2, 1460 being the packet data size).
+
+12.
+Throughput calc: TCP-size (in bits) / latency (in seconds)
+TCP-size = Ack-value of last Ack-packet * 8 = 
+         = 164091 * 8 = 1312782
+Latency = lastTCPpacketTime - firstTCPpackettime = 
+        = 5.455830 - 0.026477 = 5.429353
+Throughput = 1312782 / 5.429353 = 241793.4512638983 ~= 242 Kbit/s
+
+TASK A:
+The ACK-value represents the amount of bytes the reciever has recieved. This is useful when determining when a packet arrived fully, what size it had, and if some packets were lost one can resend the packet(s) corresponding to that ACK-value.
+The buffer at the recieving end's size holds the entire data of the packet, not counting the header information, nor other options that might be attached. It is importat that the sending party does not overflow the buffer, as that would lead to packet losses.
+RTT is useful when calculating whether your packet took the optimal route, speed-wise. Of course, this might differ as the cost of using one wire might change drastically, which would lead to packets taking a slightly slower route.
+
+RTT is one of the factors you would use to determine what the optimal route the packet could take would be. This, along with the longest matching prefix determination results (most of the time) in the most optimal route. As mentioned above, which link the packet would be sent along is also determined by the cost of using that wire.
+If a packet is lost on the way to the reciever, the reciever would notice that something is wrong when it sees that the next packet is in the wrong order. It then sends the previous ACK again, which results in a resend. This could mean wasting data usage, if the prior packet was taking a slower route, and therefore is recieved later than the first, at which point the reciever sends an ACK for both of the packets combined.
+It's possible to determine if a packet has been lost or not (when looking at, for example, a Wireshark trace) by simply looking at the ACKs recieved and comparing the values to the prior packets. If something seems amiss, a packet has most likely been lost.

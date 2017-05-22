@@ -1,0 +1,10 @@
+16. There were three GET-requests, all of which send their requests to different IP-addresses. The addresses are:
+    128.119.245.12/ethereal-labs/lab2-4.html
+    165.193.123.218/catalog/images/pearson-logo-footer.gif
+    134.241.6.82/~kurose/cover.jpg
+
+17. The two images were downloaded in parallel. You can tell by checking if the images were acquired before the next image request was sent.
+E.g., both the requests were sent before any of the answers were received.
+
+Objects can be gotten from several different servers, as long as the first server you connect to gives you an address to the next.
+Files can also be gotten in several different ways, for example in parallel or one-by-one. Parallel is in most cases faster to do, but one-by-one is (arguably) safer.

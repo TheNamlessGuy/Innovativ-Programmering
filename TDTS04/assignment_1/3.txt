@@ -1,0 +1,11 @@
+12. One, as you can see if you filter the packages after HTTP.
+
+13. 4 packages, as can be seen by checking the [x Reassembled TCP...]-tag in the server's HTTP response.
+You can also check by simply counting the TCP packages sent by the server (do not count the packages sent by your computer).
+However, one of the packages is just an acknowledgement of the GET-request, so the total is actually 3 data-carrying TCP packets.
+
+14. "200 OK".
+
+15. Yes, in the first data-containing TCP packet, you can see (in the "packet bytes" section) that all of the header for the HTTP-packet is there. It is only present in the first packet, though, since the TCP packets do not use that data at all.
+
+If a file is too large to send with one packet, the file is transmitted by x packages, each coded with a sequence number. These packages are combined into the HTTP response package in the application layer after all the packages are recieved.

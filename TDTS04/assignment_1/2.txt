@@ -1,0 +1,9 @@
+8. No, there is no If-Modified-Since, since there is nothing in the browsers cache for the site.
+
+9. Yes, the server sent the file. You can tell by checking the "Content-Type" and "Content-Length" tags. You can also check the data sent after the package header to see if it sent it all.
+
+10. Yes, and the data that follows contains the date the file currently stored in the cache was last modified.
+
+11. The server sent no data, since it has no "Content-Length" tag, and it sent a "304 Not Modified" message, which means that the server won't send a new version (since it was "Not Modified").
+
+We discovered that if the browser has no cached version of the website it is trying to connect to, it will ask for it without a "If-Modified-Since"-tag (how would it know which point in time to ask for?). However, if the browser has a cached version of the website it will append the tag, so the server won't send a new copy and, as a result, spend less bandwidth.

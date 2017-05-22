@@ -1,0 +1,26 @@
+13.
+Old trace:
+    The slow-start is the first "squiggly" line in the graph.
+    There is however no defining characteristics of congestion avoidance in the graph (even if it might be there).
+New trace:
+    The slow start is seemingly the straight line in all of the "segments", which later go into congestion control (which would be the diagonal line). However, it seems like after each diagonal line, it goes into slow start once again. This could be due to a timeout error from a packet.
+
+14.
+Congestion Window:
+The window of packets that the sender can send before receiving an ACK. This grows in size exponentially until a timeout occurs, at which point it either resets to 1, is set to half size, or slow start is initiated, depending on what type of protocol you are following.
+
+Receiver advertised window:
+This window is compared to the congestion window to determine how much data the sender can send at any time.
+
+Unacknowledged bytes:
+The number of bytes whose packets currently haven't been ACK-ed in the active window (that have been sent).
+
+Effective Window:
+The effective window is determined by taking the advertised window and removing the total amount of unACK-ed bytes, i.e.:
+Effective Window = Advertised Window - (Last Byte Sent - Last Byte ACK-ed).
+
+15.
+You might be able to see the congestion window by checking if the sender is not sending the maximum size of packets it can send. This is however not 100% accurate, since it can depend on many different things, such as total data size.
+
+Discussion:
+There are a lot of different things to keep in mind when talking about TCP, and everything relates to one another very much. When you actually do realise how everything links together though, it becomes quite obvious that it is that way.

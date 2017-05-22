@@ -1,0 +1,22 @@
+module ChatApp {
+  interface ChatCallback {
+    void callback(in string message);
+    void loginAck(in string accepted, in string name);
+  };
+  interface Chat {
+    string connect(in ChatCallback ccb);
+    void login(in string name, in string id);
+
+    void say(in string message, in string id);
+    string listClients();
+
+    void quit(in string id);
+    void leave(in string id);
+
+    void othelloJoin(in string id, in string team);
+    void othelloMove(in string id, in string position);
+    void othelloLeave(in string id);
+    
+    void resetBoard(in string id);
+  };
+};
