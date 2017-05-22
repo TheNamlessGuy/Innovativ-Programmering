@@ -1,0 +1,21 @@
+* Glömmer specifik språksyntax enkelt (@, @@, $, etc i Ruby). Kan bli jobbigt i början, men man vänjer sig snabbt.
+* Upprepning av karaktärer (==, &&, ||) kan leda till att det blir enkelt att missa ett av dem. Med syntax så som i Ruby, att || och | är två funktionella saker
+* Djup involvering av regex är bra i Ruby. Väldigt användbart vid flera olika tillfällen.
+* Började jobba i rdparse i 007. Verkar komplicerat. Bra att vi gick igenom BNF i 019 innan.
+* Många språksyntax är väldigt liknande. <variabel>.<funktion> finns med som standard i de flesta språk. Detta är bra pga. det gör det enklare att lära sig det nya språket.
+* Även om unik syntax gör det svårare att lära sig ett språk är det även roligare, då man associerar just den syntaxen med det språket (vilket du kanske gillar).
+* När det kommer till vanliga saker i språk så som if-satser och while-satser, se till att använda likande syntax som andra språk. Kan inte komma ihåg hur en for-loop i Ruby ser ut.
+* Alltid när man lär sig ett nytt språk är det jobbigt i början. Men när man väl har vant sig vid språket så kan det visa sig vara mycket mer användbart.
+* Idag började vi med att jobba med kod i 019. Vi ska göra ett språk som är lättläst! "if (x is_larger_than 5)" osv!
+* Vi bestämde oss för att koden ska kunna gå att skriva på ett "långt" sätt och ett "kort" sätt, så att folk kan använda det som de vill.
+* Hade handledning. Jonas påpekade att vi inte kan ha "set x to 5" som funktionsanrop, för att man inte vet vilken som är variabeln man anropar funktionen ifrån. Back to the drawing board...
+* Vi försöker komma på ett bra sätt att ändra vårat syntax så det fortfarande är lätt att läsa, men ändå lätt att implementera. Är svårt.
+* Vi bestämde oss för att skippa "do x times"-loopen då det kändes onödigt i det stora hela. Kanske om vi får tid till det.
+* GENIAL IDÉ! Vi implementerar språket med väldigt löst funktionsanropssyntax. Man ska kunna definiera funktioner så här: "define set_$n_to_$1 as function" där $n är variabeln och $1 är parametern!
+* Vi tänkte lite djupare och kom fram till att det kan bli lite jobbigt att implementera funktionsanropssyntaxet. Men det kommer bli kul!
+* Handledning igen. Jonas påpekade att vi fortfarande inte vet vad i ett funktionsanrop som är målet, och att vi inte vet vad som är inparametrar. Vi bestämde oss för att sätta specialtecken runt dessa.
+* Vi bestämde oss för att sätta målsvariabeln inom kolon, och parametrar inom apostrofer. Det komprimerar inte läsbarheten för mycket enligt oss. Vi valde också att skippa den "lättlästa" biten av språket, då det känns onödigt. Om man vill ha kortare syntax kan man skriva egna funktioner för det.
+* Allt går bara snett. RDParser matchar tokens som inte borde matchas, och kastar errors utan anledning på grund av det. Det verkar som man måste returnera nil från ett kodblock i en matchning om man inte vill att det ska gälla. Hade varit bra att veta detta innan.
+* Det börjar gå bättre, men scopes är jobbigt. Variabler blir kvar när de inte ska vara det och liknande. Väldigt jobbigt att Ruby inte är pass-by-value rakt av.
+* Arrayer är dumma. Längden ska vara satt på ett hårdkodat sätt när man sätter värdet på en variabel, men är svårt att sätta rätt variabel, och ibland finns den inte. Mycket jobbigt.
+* Nu fungerar allt vad vi kan se. Man kan inte ha funktionsanrop som parameter till funktionsanrop, men det är en logisk del i språket.

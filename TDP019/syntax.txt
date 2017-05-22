@@ -1,0 +1,45 @@
+<program> ::= <contents>
+<contents> ::= <content> <contents>
+           | <content>
+<content> ::= <classdef>
+          | <funcdef>
+          | <stmt>
+<classdef> ::= <definition> <NAME>' as class '<inheritance> '{' <classcont> '}'
+<classcont> ::= <memfunctions> <classcont>
+            | <memvars> <classcont>
+            | <empty>
+<memfunctions> ::= <memfunction> <memfunctions>
+              | <memfunction>
+<memfunction> ::= <access> <funcdef>
+<memvars> ::= <memvar> <memvars>
+          | <memvar>
+<memvar> ::= <access> <vardef>
+<access> ::= 'public' | 'private'
+<funcdef> ::= <definition> <NAME>' as function with_parameters('<parameters>') <codeblock>
+           | <definition> <NAME>' function w_param('<parameters>') <codeblock>
+<parameters> ::= <vardef>',' <parameters>
+             | <vardef>
+<vardef> ::= <definition> <NAME>' as '<CNAME> <sep>
+         | <definition> <NAME>' as '<CNAME>' with_value '<stmt> <sep>
+         | <definition> <NAME> <CNAME> <sep>
+         | <definition> <NAME> <CNAME>' to '<stmt> <sep>
+<stmts> ::= <stmt> <stmts>
+        | <stmt>
+<stmt> ::= <func_call> <sep>
+       | <vardef> <sep>
+<func_call> ::= <FNAME>(<vars>)
+            | <func_call_oneparam>
+<func_call_oneparam> ::= <FNAME> <VNAME> //print a
+<memfunc_call> ::= <func_call>' from '<NAME> // is_equal_to y from x eller memfunc(z, y, u) from x
+               | <NAME>' '<func_call_oneparam> // x is_equal_to y
+<vars> ::= <NAME>', '<vars>
+       | <NAME>
+<comments> ::= '//' comment '//'
+<codeblock> ::= '{' <stmts> '}'
+<definition> ::= 'define' | 'def'
+<sep> ::= '.'
+<inheritance> ::= '<' <CNAME>
+              | <empty>
+<includes> ::= <include> <includes>
+           | <include>
+<include> ::= 'use '<path> <sep>

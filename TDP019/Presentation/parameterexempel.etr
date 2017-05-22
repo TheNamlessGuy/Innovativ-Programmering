@@ -1,0 +1,14 @@
+define func_$1_$2 as function with parameters (define a as Boolean, define b as String) {
+    if ('a') {
+       print 'b';
+    }
+}
+
+define str as String;
+set :str: to "This will not print\n";
+
+func false 'str';
+
+set :str: to "This will print\n";
+
+func true 'str';

@@ -1,0 +1,85 @@
+Variabler: hashtabell formaterad så att {"variabelnamn"=>["klass", värde]}
+
+klasser : hashtabell formaterad så att { "klassnamn" => [ {"funktionsnamn" => "funktionsinnehåll", "Funktionsnamn" => "funktionsinnehåll"}, {"variabelnamn" => ["klass", värde]} , ["klassnamn arv1", "klassnamn arv2"] ] }
+
+Arvsökning rekursivt (så den närmsta funktionen anropas).
+find_function(funktionsnamn, array_med_arv) {
+     for each (i) in array_med_arv:
+       if i contains function funktionsnamn
+          return i
+       else if i has no arv
+          return nil
+       else
+          return find_function(funktionsnamn, i.array_med_arv)
+}
+
+kommentarer slängs bort:
+            token(/ //.*// /)
+
+Om inte "$n" finns i funktionsnamn, lägg dit " from$n" i slutet automatiskt.
+
+Alla inparametrar till en funktion default-ar till slutet av funktionen.
+test = "define my_name_is_$n_and_my_parameters_are_set_here_$2(define x as int, define y as int)"
+for i = 1, i < parameters.amount
+    if "$i" not in test
+       append $i
+slutresultat: "define my_name_is_$n_and_my_parameters_are_set_here_$2$1"
+anrop: "my_name_is_x_and_my_parameters_are_set_here_5 2"
+där objektet är "x" och parametrarna är "5" och "2"
+
+
+class bool {
+      define mybool as Boolean
+      public define set_$n_to_$1_or_$2(define a as Boolean, define b as Boolean) {
+         mybool = a or b.
+      }
+      //eventuellt//
+      public define $nor(define a as Boolean) {
+        return (this or a)
+      }
+}
+anrop: set x to true or false
+
+true.or(false) = true or false
+set x to.(true.or(false)) = set x to true or false
+
+alla $-saker kräver spaces innan och/eller efter sig vid anrop.
+Ifall t.ex. $n är i början av namnet krävs space endast efter.
+ifall $n är i slutet av namnet krävs space endast innan.
+annars krävs space innan och efter.
+
+Returvärdestyp är auto (kommer att vara första returvärdet som kommer i koden).
+Om första returvärdet är tomt, kan inget returneras från funktionen.
+Om inget returneras, samma som tomt returvärde. (int x = func_utan_retur -> error)
+Bara ett returvärde (flera värden->sätt i array)
+
+Vid funktionsanrop kan "_" tolkas som " ". Dvs,
+class bool {
+      define mybool as Boolean.
+      publicly define set_$n_to_(define b as Boolean) {
+         mybool = b.
+      }
+}
+Kan användas som:
+    define mybool as bool.
+    set mybool to true.
+    //eventuellt//
+    set_mybool_to_true.
+
+
+Inparametrar får ej heta samma sak som variabler (error).
+Arrayer får innehålla en blanding av olika sorters variabler.
+
+Grundklasser:
+    Integer
+    Boolean
+    String
+    Array
+    Float
+
+FRÅGOR:
+        Kasta errors?
+        Hur sparar man undan funktioner?
+        $-sakerna implementation möjligt?
+        Hur vet parsern om t.ex. [1,2] är av klassen array?
+        

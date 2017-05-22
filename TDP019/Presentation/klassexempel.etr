@@ -1,0 +1,13 @@
+define myclass as class {
+   define self as Integer;
+
+   define initialize_$n as function {
+      set :self: to 0;
+   }
+}
+
+define myobj as myclass;
+initialize :myobj:;
+
+print 'myobj';
+puts;

@@ -1,0 +1,36 @@
+* Behöver inte // som kommentar i figurerna, bättre att använda ¤ för konsekvens
+
+* Varför variabeltypsdeklaration om man bara kan byta? Alternativt att man "binder om" variabeln vid typbyte. Går det att byta på en gång?
+
+* Behållare.lägg_till tar in godtyckligt många parametrar?
+
+* Bättre att ha insert som egen funktion i behållare? (Figur 3, Ex4)
+
+* Figur 3, Ex4 och Ex5 -> lägg_till? Borde vara ändra?
+
+* "0 blir 7,7" -> Lite otydligt att läggs till från index 0 och uppåt.
+
+
+
+
+
+* Typdeklaration har absolut ingen betydelse förutom att visa variabelinitiering. "het minvar = "Hej";" är ett godkänt uttryck.
+
+* Varför skriva ut "niLang börjar" förutom för debug?
+
+* Kan skriva ut variabler som inte har definierats (skrivs ut som tomt)
+
+* "het" är inget bra ord för heltal i ett svenskbaserat språk, då det redan är ett svenskt ord som betyder något annat. Ha t.ex. "hel" istället.
+
+* Felkastning vid utskrivning skriver fortfarande ut. "kskriv func(5);" blir:
+  "niLang börjar
+  funktionen fanns inte
+  "
+
+* går att döpa funktioner till funktion.
+
+* "egna klasser"?
+
+* "flt" ses som egen/hemmagjord klasstyp i parametersammanhang.
+
+* Kan inte använda egen klass som inparameter?

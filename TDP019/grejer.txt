@@ -1,0 +1,46 @@
+***************** ARV ****************
+Arv räknas alltid från vänster till höger.
+Om du ärver från två saker som har en funktion med samma namn var, så kommer den du ärvde ifrån försts funktion att användas.
+***************** COSMETICS ***************
+Vid funktionsanrop -> objektet som kallas omges av :, medans alla inparametrar (var för sig) omges av '
+
+Radbryt -> ;
+
+Kommentarer -> //COMMENT//
+               //
+               COMMENT
+               //
+
+Vid funktionsnamngivning måste inparametrarnas paranteser ligga åtminstone ett whitespace ifrån namnet (vilket ger namnet whitespaces på båda sidorna).
+
+Vid funktionsanrop kan "_" tolkas som " ".
+Vid medlemsfunktionsanrop kan "$n" tolkas som objektet av klassen du kallar anropet ifrån.
+Vid funktionsanrop kan "$1" tolkas som den första inparametern (likaså kan "$2" tolkas som den andra, osv.)
+
+***************** FUNKTIONER ***************
+Det ska gå att använda samma "lösa" grammatik på både medlemsfunktioner och funktioner (funktioner kan dock inte använda sig av '$n').
+
+Om '$n' inte finns med i ett medlemsfunktionsnamn, så läggs "_from_$n" till automatiskt.
+
+Om någon av inparametrarna inte finns definierade i medlemsfunktionsnamnet, så ska de läggas till i slutet på så sätt -> 'par1' 'par2'.
+EXEMPEL:
+   Riktigt namn:
+        set_$n_to_$2 (define a as int, define b as int)
+   Kompilatorn ser namnet som:
+        set_$n_to_$2_$1
+   Anrop:
+        set x to 5 1;
+
+*************** RETURVÄRDEN ********************
+Returvärdestypen är av den klass som det första return-statementets variabel är. Om det inte finns någon variabel (endast "return") så kan inget returneras.
+
+Om det inte finns något return-statement så antas det att det sitter i slutet av klassen och fungerar lika som om det inte hade varit något returvärde.
+
+Det ska bara finnas ett returvärde (om du vill returnera flera variabler, returnera en array).
+
+******************** INBYGGDA KLASSER *******************
+Integer
+Float
+Boolean 
+String
+Array

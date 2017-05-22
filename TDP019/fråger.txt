@@ -1,0 +1,6 @@
+1. Arv och casting?
+2. Includes, baklänges! (Gör main-filen först, includes efter).
+3. Att bara kunna skicka in variabler i funktionsanrop (ej funktionsanrop in i funktionsanrop!)
+4. Bara spaces i matematiska/logiska uttryck? (ej 1+2, endast 1 + 2)
+5. Två parsers?
+6. Väldigt långsamt

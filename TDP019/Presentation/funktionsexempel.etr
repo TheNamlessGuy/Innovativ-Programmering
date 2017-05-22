@@ -1,0 +1,5 @@
+define hello_world as function {
+    print "Hello World!\n";
+}
+
+hello world;

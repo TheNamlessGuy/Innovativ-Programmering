@@ -1,0 +1,13 @@
+define a as Integer;
+set :a: to 5;
+puts :a:;
+
+define multiply_$1_by_$2 as function with parameters(define a as Integer, define b as Integer) {
+      return 'a' * 'b'; 
+}
+
+print multiply 5 by 10;
+puts;
+
+print multiply 2 by 5;
+puts;

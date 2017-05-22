@@ -1,0 +1,53 @@
+<program> ::= <contents>
+<contents> ::= <content> <contents>
+           | <content>
+<content> ::= <includes>
+          | <classdefs>
+          | <funcdefs>
+          | <stmts>
+
+<includes> ::= <include> <includes>
+           | <EMPTY>
+<include> ::= 'use '<PATH> <sep>
+
+<classdefs> ::= <classdef> <classdefs>
+            | <EMPTY>
+<classdef> ::= 'define '<CNAME>' as class'<inheritance>'{'<classcont>'}'
+<classcont> ::= <memfuncdefs> <classcont>
+            | <memvardefs> <classcont>
+            | <EMPTY>
+<memfuncdefs> ::= <memfuncdef> <memfuncdefs>
+              | <EMPTY>
+<memfuncdef> ::= <visibility> <funcdef>
+<memvardefs> ::= <memvardef> <memvardefs>
+             | <EMPTY>
+<memvardef> ::= <visibility> <vardef>
+
+<funcdefs> ::= <funcdef> <funcdefs>
+           | <EMPTY>
+<funcdef> ::= 'define '<FNAME>' as function with parameters('<parameters>')' <codeblock>
+<parameters> ::= <vardef>', '<parameters>
+             | <vardef>
+             | <EMPTY>
+<codeblock> ::= '{'<stmts>'}'
+
+<stmts> ::= <stmt> <stmts>
+        | <EMPTY>
+<stmt> ::= <func_call> <sep>
+       | <vardef> <sep>
+       | <memfunc_call> <sep>
+<vardef> ::= 'define '<NAME>' as '<CNAME><sep>
+<func_call> ::= ???????????????????????????????????
+<memfunc_call> ::= ?????????????????????????????????????
+
+<visibility> ::= 'publicly '
+             | 'privately '
+
+<sep> ::= ';'
+
+<inheritance> ::= '< '<cnamelist>
+              | <EMPTY>
+<cnamelist> ::= <CNAME>', '<cnamelist>
+            | <CNAME>
+
+<comment> ::= '//'<COMMENT>'//'

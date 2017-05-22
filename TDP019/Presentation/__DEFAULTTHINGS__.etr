@@ -1,0 +1,517 @@
+define $1_^_$2 as function with parameters(define a as Integer, define b as Integer) {
+   return ('a' ** 'b');
+}
+
+define $1_mod_$2 as function with parameters(define a as Integer, define b as Integer) {
+   return ('a' % 'b');
+}
+
+define puts as function {
+   print "\n";
+}
+
+define Integer as class {
+   define self as Integer;
+
+   define initialize_$n as function {
+      :self: = 0;
+   }
+   
+   define set_$n_to_$1 as function with parameters(define a as Integer) {
+     :self: = 'a';
+   }
+
+   // PLUS //
+   define $n_+_$1 as function with parameters(define a as Integer) {
+      return ('self' + 'a');
+   }
+
+   define $n_plus_$1 as function with parameters(define a as Integer) {
+      return ('self' + 'a');
+   }
+   
+   define $n_+=_$1 as function with parameters(define a as Integer) {
+      :self: = ('self' + 'a');
+   }
+   
+   // MINUS //
+   define $n_-_$1 as function with parameters(define a as Integer) {
+      return ('self' - 'a');
+   }
+
+   define $n_minus_$1 as function with parameters(define a as Integer) {
+      return ('self' - 'a');
+   }
+
+   define $n_-=_$1 as function with parameters(define a as Integer) {
+      :self: = ('self' - 'a');
+   }
+   
+   // MULTIPLIED //
+   define $n_*_$1 as function with parameters(define a as Integer) {
+      return ('self' * 'a');
+   }
+
+   define $n_multiplied_by_$1 as function with parameters(define a as Integer) {
+      return ('self' * 'a');
+   }
+
+   define $n_*=_$1 as function with parameters(define a as Integer) {
+      :self: = ('self' * 'a');
+   }
+   
+   // DIVIDED //
+   define $n_/_$1 as function with parameters(define a as Integer) {
+      return ('self' / 'a');
+   }
+
+   define $n_divided_by_$1 as function with parameters(define a as Integer) {
+      return ('self' / 'a');
+   }
+
+   define $n_/=_$1 as function with parameters(define a as Integer) {
+      :self: = 'self' / 'a';
+   }
+   
+   // MODULUS //
+   define $n_%_$1 as function with parameters(define a as Integer) {
+      return ('self' % 'a');
+   }
+   
+   define $n_mod_$1 as function with parameters(define a as Integer) {
+      return ('self' % 'a');
+   }
+
+   define $n_%=_$1 as function with parameters(define a as Integer) {
+      :self: = 'self' % 'a';
+   }
+
+   // POWER OF //
+   define $n_**_$1 as function with parameters(define a as Integer) {
+      return ('self' ** 'a');
+   }
+
+   define $n_^_$1 as function with parameters(define a as Integer) {
+      return ('self' ** 'a');
+   }
+
+   define $n_to_the_power_of_$1 as function with parameters(define a as Integer) {
+      return ('self' ** 'a');
+   }
+
+   define $n_**=_$1 as function with parameters(define a as Integer) {
+      :self: = 'self' ** 'a';
+   }
+
+   define $n_^=_$1 as function with parameters(define a as Integer) {
+      :self: = 'self' ** 'a';
+   }
+   
+   // INCREMENT //
+   define increment_$n as function {
+      :self: = ('self' + 1);
+   }
+
+   define increment_$n_by_$1 as function with parameters(define a as Integer) {
+      :self: = ('self' + 'a');
+   }
+
+   // DECREMENT //
+   define decrement_$n as function {
+      :self: = ('self' - 1);
+   }
+
+   define decrement_$n_by_$1 as function with parameters(define a as Integer) {
+      :self: = ('self' - 'a');
+   }
+   
+   // EQUALITY //
+   define $n_is_less_than_$1 as function with parameters(define a as Integer) {
+      return ('self' < 'a');
+   }
+
+   define $n_is_less_than_or_equal_to_$1 as function with parameters(define a as Integer) {
+      return :self: <= 'a';
+   }
+   
+   define $n_is_greater_than_$1 as function with parameters(define a as Integer) {
+      return ('self' > 'a');
+   }
+
+   define $n_is_greater_than_or_equal_to_$1 as function with parameters(define a as Integer) {
+      return :self: >= 'a';
+   }
+  
+   define $n_>=_$1 as function with parameters(define a as Integer) {
+     if ('self' == 'a') { return true; }
+     if ('self' > 'a') { return true; }
+     return false;
+   }
+
+   define $n_<=_$1 as function with parameters(define a as Integer) {
+     if ('self' == 'a') { return true; }
+     if ('self' < 'a') { return true; }
+     return false;
+   }
+
+   define $n_==_$1 as function with parameters(define a as Integer) {
+      return ('self' == 'a');
+   }
+   
+   define $n_equals_$1 as function with parameters(define a as Integer) {
+      return ('self' == 'a');
+   }
+
+   define $n_does_not_equal_$1 as function with parameters(define a as Integer) {
+      define b as Boolean;
+      :b: = :self: equals 'a';
+      return !'b';
+   }
+
+   // PUTS //
+   define puts_$n as function {
+     print 'self';
+     puts;
+   }
+}
+
+define String as class {
+   define self as String;
+
+   define initialize_$n as function {
+      :self: = "";
+   }
+   
+   define set_$n_to_$1 as function with parameters(define a as String) {
+      :self: = 'a';
+   }
+   
+   // EQUALITY //
+   define $n_==_$1 as function with parameters(define a as String) {
+      return ('self' == 'a');
+   }
+
+   define $n_equals_$1 as function with parameters(define a as String) {
+      return ('self' == 'a');
+   }
+
+   define $n_does_not_equal_$1 as function with parameters(define a as String) {
+      define b as Boolean;
+      :b: = :self: == 'a';
+      return !'b';
+   }
+   
+   // PUTS //
+   define puts_$n as function {
+      print 'self';
+      puts;
+   }
+}
+
+define Boolean as class {
+   define self as Boolean;
+   
+   define initialize_$n as function {
+      :self: = false;
+   }
+
+   define set_$n_to_$1 as function with parameters(define a as Boolean) {
+      :self: = 'a';
+   }
+   
+   // EQUALITY //
+   define $n_==_$1 as function with parameters(define a as Boolean) {
+      return ('self' == 'a');
+   }
+   
+   define $n_equals_$1 as function with parameters(define a as Boolean) {
+      return ('self' == 'a');
+   }
+   
+   define $n_does_not_equal_$1 as function with parameters(define a as Boolean) {
+      define b as Boolean;
+      :b: = :self: == 'a';
+      return !'b';
+   }
+
+   // AND //
+   define $n_&&_$1 as function with parameters(define a as Boolean) {
+      return ('self' && 'a');
+   }
+   
+   define $n_and_$1 as function with parameters(define a as Boolean) {
+      return ('self' && 'a');
+   }
+
+   // OR //
+   define $n_||_$1 as function with parameters(define a as Boolean) {
+      return ('self' || 'a');
+   }
+
+   define $n_or_$1 as function with parameters(define a as Boolean) {
+      return ('self' || 'a');
+   }
+
+   // NOT //
+   define not_$n as function {
+      return !'self';
+   }
+   
+   // PUTS //
+   define puts_$n as function {
+      print 'self';
+      puts;
+   }
+}
+
+define Float as class {
+   define self as Float;
+   
+   define initialize_$n as function {
+      :self: = 0.0;
+   }
+
+   define set_$n_to_$1 as function with parameters(define a as Float) {
+      :self: = 'a';
+   }
+
+   // PLUS //
+   define $n_+_$1 as function with parameters(define a as Float) {
+      return ('self' + 'a');
+   }
+   
+   define $n_plus_$1 as function with parameters(define a as Float) {
+      return ('self' + 'a');
+   }
+   
+   define $n_+=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' + 'a';
+   }
+   
+   // MINUS //
+   define $n_-_$1 as function with parameters(define a as Float) {
+      return ('self' - 'a');
+   }
+   
+   define $n_minus_$1 as function with parameters(define a as Float) {
+      return ('self' - 'a');
+   }
+   
+   define $n_-=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' - 'a';
+   }
+   
+   // MULTIPLIED //
+   define $n_*_$1 as function with parameters(define a as Float) {
+      return ('self' * 'a');
+   }
+   
+   define $n_multiplied_by_$1 as function with parameters(define a as Float) {
+      return ('self' * 'a');
+   }
+
+   define $n_*=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' * 'a';
+   }
+   
+   // DIVIDED //
+   define $n_/_$1 as function with parameters(define a as Float) {
+      return ('self' / 'a');
+   }
+   
+   define $n_divided_by_$1 as function with parameters(define a as Float) {
+      return ('self' / 'a');
+   }
+   
+   define $n_/=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' / 'a';
+   }
+   
+   // MODULUS //
+   define $n_%_$1 as function with parameters(define a as Float) {
+      return ('self' % 'a');
+   }
+   
+   define $n_mod_$1 as function with parameters(define a as Float) {
+      return ('self' % 'a');
+   }
+   
+   define $n_%=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' % 'a';
+   }
+
+   // POWER OF //
+   define $n_**_$1 as function with parameters(define a as Float) {
+      return ('self' ** 'a');
+   }
+   
+   define $n_^_$1 as function with parameters(define a as Float) {
+      return ('self' ** 'a');
+   }
+
+   define $n_to_the_power_of_$1 as function with parameters(define a as Float) {
+      return ('self' ** 'a');
+   }
+   
+   define $n_**=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' ** 'a';
+   }
+   
+   define $n_^=_$1 as function with parameters(define a as Float) {
+      :self: = 'self' ** 'a';
+   }
+   
+   // INCREMENT //
+   define increment_$n as function {
+      :self: = 'self' + 1;
+   }
+   
+   define increment_$n_by_$1 as function with parameters(define a as Float) {
+      :self: = 'self' + 'a';
+   }
+
+   // DECREMENT //
+   define decrement_$n as function {
+      :self: = 'self' - 1;
+   }
+
+   define decrement_$n_by_$1 as function with parameters(define a as Float) {
+      :self: = 'self' - 'a';
+   }
+   
+   // EQUALITY //
+   define $n_==_$1 as function with parameters(define a as Float) {
+      return ('self' == 'a');
+   }
+   
+   define $n_equals_$1 as function with parameters(define a as Float) {
+      return ('self' == 'a');
+   }
+
+   define $n_>_$1 as function with parameters(define a as Float) {
+      return ('self' > 'a');
+   }
+   
+   define $n_is_greater_than_$1 as function with parameters(define a as Float) {
+      return ('self' > 'a');
+   }
+   
+   define $n_>=_$1 as function with parameters(define a as Float) {
+      if ('self' == 'a') { return true; }
+      if ('self' > 'a') { return true; }
+      return false;
+   }
+   
+   define $n_is_greater_than_or_equal_to_$1 as function with parameters(define a as Float) {
+      if ('self' == 'a') { return true; }
+      if ('self' > 'a') { return true; }
+      return false;
+   }
+   
+   define $n_<_$1 as function with parameters(define a as Float) {
+      return ('self' < 'a');
+   }
+
+   define $n_is_less_than_$1 as function with parameters(define a as Float) {
+      return ('self' < 'a');
+   }
+   
+   define $n_<=_$1 as function with parameters(define a as Float) {
+      if ('self' == 'a') { return true; }
+      if ('self' < 'a') { return true; }
+      return false;
+   }
+   
+   define $n_is_less_than_or_equal_to_$1 as function with parameters(define a as Float) {
+      if ('self' == 'a') { return true; }
+      if ('self' < 'a') { return true; }
+      return false;
+   }
+   
+   define $n_does_not_equal_$1 as function with parameters(define a as Float) {
+      define b as Boolean;
+      :b: = :self: equals 'a';
+      return !'b';
+   }
+
+   // PUTS //
+   define puts_$n as function {
+     print 'self';
+     puts;
+   }
+}
+
+define Array as class {
+   define self as Array;
+   define length as Integer;
+   
+   define initialize_$n as function {
+      :self: = [];
+   }
+
+   define set_$n_to_$1 as function with parameters(define a as Array) {
+      :self: = 'a';
+      :length: = get length of :a:;
+   }
+
+   define get_length_of_$n as function {
+      return 'length';
+   }
+
+   // EQUALITY //
+   define $n_==_$1 as function with parameters(define a as Array) {
+      return ('self' == 'a');
+   }
+   
+   define $n_equals_$1 as function with parameters(define a as Array) {
+      return ('self' == 'a');
+   }
+
+   define $n_does_not_equal_$1 as function with parameters(define a as Array) {
+      define b as Boolean;
+      :b: = :self: == 'a';
+      return !'b';
+   }
+   
+   // APPENDING //
+   define add_Array_$1_to_$n as function with parameters(define a as Array) {
+      :self:<<'a';
+      :length: += 1;
+   }
+   
+   define add_String_$1_to_$n as function with parameters(define a as String) {
+      :self:<<'a';
+      :length: += 1;
+   }
+   
+   define add_Integer_$1_to_$n as function with parameters(define a as Integer) {
+      :self:<<'a';
+      :length: += 1;
+   }
+   
+   define add_Boolean_$1_to_$n as function with parameters(define a as Boolean) {
+      :self:<<'a';
+      :length: += 1;
+   }
+   
+   define add_Float_$1_to_$n as function with parameters(define a as Float) {
+      :self:<<'a';
+      :length: += 1;
+   }
+   
+   define add_index_$1_from_$2_to_$n as function with parameters(define a as Integer, define b as Array) {
+      :self:<<:b:['a'];
+      :length: += 1;
+   }
+   
+   // GETTING //
+   define get_index_$1_from_$n as function with parameters(define index as Integer) {
+      return :self:['index'];
+   }
+   
+   // PUTS //
+   define puts_$n as function {
+      print 'self';
+      print "\n";
+   }
+}

@@ -1,0 +1,92 @@
+Easy To Read (ETR)
+.etr
+
+'/" - ingen skillnad
+ingen char, bara string
+Alla funktioner i klasser ska komma åt allt inom klassen, alla funktioner utanför klasser ska komma åt allt utanför klasser.
+(dvs medlemsfunktioner kommer åt medlemsvariabler, vanliga funktioner kommer åt vanliga variabler).
+
+************************
+use './myfile.txt'
+
+define x as int.
+set x to user_input.
+define y as int with_value user_input.
+
+if (x is_larger_than 5) {
+  set x to 5.
+} otherwise {
+  set x to 2.
+}
+
+define myfunction as function with_parameters(define i as int) {
+  print a.
+  set a to user_input.
+  return a.
+}
+
+do {
+  print "Markus är en noob". //Det är sant//
+} x times
+
+while (x is_less_than_or_equal_to 5) {
+  call myfunction(x).
+}
+
+define myclass as class {
+  define z as string.
+  define myint as int.
+  define new as function with_parameters(define x as string) {
+    make z public.
+    set z to x.
+  }
+
+  define print_z as function with_parameters() {
+    print z.
+  }
+}
+
+define myobject as myclass(x).
+print_z from myobject.
+
+-------------------------------------
+use './myfile.txt'
+
+def x int
+x to user_input
+def y int to user_input
+
+if (x larger 5) {
+   x to 5.
+} otherwise {
+  x to 2.
+}
+
+def myfunction function w_param(def i int) {
+  print a.
+  a to user_input.
+  return a.
+}
+
+do {
+   print "Stuff". //Ärligt
+} x times
+
+while (x less_equal 5) {
+   call myfunction(x).
+}
+
+def myclass class {
+  def z string.
+  def new function w_param(def x string) {
+    make z public.
+    z to x.
+  }
+
+  def print_z function w_param() {
+    print z.
+  }
+}
+
+def myobject myclass(x).
+call print_z myobject.y
