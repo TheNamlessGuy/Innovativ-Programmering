@@ -1,0 +1,32 @@
+Uppgift #1:
+
+Uppgiften gick ut på att samla info från olika tabeller. Till uppgiften skulle man använda REGEX
+uttryck för att hitta informationen, vilket jag själv anser vara det ENDA rimliga tillvägagångssättet
+för att lösa problemet. Alla andra metoder skulle troligtvis bara leda till massa onödigt arbete. Dessutom
+passar det väldigt bra med Ruby, eftersom språket har REGEX integrerat på ett smart och bekvämt sätt.
+
+Vår plan på att lösa uppgiften var att hitta de värden man letar efter (beroende på vilken tabell man tittar
+i), och sedan lägga in dem i en hashtabell, där vi sorterar efter värderna, med det lägsta värdet överst. 
+
+Att sätta oss in i REGEX var inga problem, främst eftersom vi har använt det väldigt mycket tidigare. 
+Problemt var hur vi skulle skapa en generell lösning som skulle kunna fungera på alla möjliga tabeller,
+och inte bara fotbolls- och vädertabellen uppgiften krävde. Lösningen vi använde var att använda
+matchgroups. Vi använde två REGEX-uttryck (det ena för nyckeln, och den andra för värdet i en
+hashtabell), där uttrycken identifierade en hel rad med tabellinformation (och inte någon headerinfo),
+och matchgroups i uttrycken identifierade den specifika datan man var ute efter. 
+
+För att göra denna lösning generell gjorde vi en klass som laddade in en fil, och där användaren själv
+måste specifiera REGEX-uttrycken man söker med. 
+
+Uppgift #2:
+
+Uppgiften gick ut på att leta genom ett XML dokument (eller HTML document, eller whatever) och leta upp 
+microformats. Vi använde en SAX parser för att leta upp element med det attribut man söker efter, följt av
+den tillhörande texten. Texten sparas i en lista, som man kan göra lite vad man vill med (skriva ut kanske). 
+
+Valet av att använda SAX var motiverat av att det var den enda metod vi visste om, vid den tidpunkten. Nu när vi
+känner till DOM och XPath så ser vi möjliga argument till varför man skulle kunna föredra den ena framför den
+andra. DOM hade passat bra, eftersom man då arbetar med en sorts trädstruktur, och lätt kan hitta text som tillhör
+ett visst element med ett specifikt attribut. Med vår SAX lösning var vi tvungna att spara i en variabel att vi hade
+hittat rätt element, och sedan ta in den variabeln i funktionen som letar upp ren text. Vilket gör saker och ting
+lite mer komplicerat än vad det egentligen behöver vara. 

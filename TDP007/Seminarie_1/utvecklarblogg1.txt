@@ -1,0 +1,26 @@
+Tis 20:
+    Glömmer att skriva med @ för alla medlemsvariabler.
+    Väldigt lättläsligt syntax, enkelt att använda när man väl vant sig.
+    Skönt att allt är klasser, enkelt att använda.
+    Eftersom ruby inte har lika avanserad felhantering som till exempel C++, gör man enkelt små misstag som man inte vid första tillfället tänker på. Vi råkade missa att inte använda oss av nollor i multiplikation.
+    Lite drygt att man inte behöver skriva return, skulle kunna göra mindre problem i större program om man t.ex. glömmer att skriva ut "return nil" när man inte vill att en funktion ska returnera något.
+    Känns väldigt avancerat även med enkelt syntax. Kan skriva om tilldelningsoperatorer, vilket låg på den mer komplicerade sidan i C++ (t.ex)
+
+Tors 22:
+     Glömmer att skriva #{} i strängar när man vill använda kod i dem.
+     Enkelt att man kan skicka in funktioner in i klasser.
+     Flera olika sorters loopar, kan välja vilken sort som passar dig bäst (t.ex. 3.times eller 1.upto(3))
+     'print' och 'puts' ger bra valmöjligheter.
+     Att få nummer-ranges är väldigt likt python (python: 'range(100)', ruby: '(0..100)')
+     Idag skrev vi alla labbuppgifterna, vilket gick snabbt framåt. Vi har bestämt att inte använda för mycket felhantering, då djupet i den här kursen inte låg på labbuppgifterna.
+     Den enda labbuppgiften vi fick ett tolkningsproblem med var den med HTML-taggar, då vi inte visste (men antog) att man skulle ta med allt som står inom taggarna,
+     inte bara själva tagg-namnet, det vill säga, inte "img", "a", utan "image src='[fil]'" och "a href='[länk]'"
+
+Mån 26:
+    Ruby känns användbart som ett script-språk för att testa enklare funktioner. Eller för att rensa stora data filer. Detta speciellt för att regex är välinbyggt i språket.
+    Vi som tidigare jobbat med python har en klar fördel gällande hur man ska gå tillväga för att lära sig att programmera i ruby.
+    Eftersom ruby är ett simpelt och välanvät språk är det enkelt att stöta på problem som andra stött på förr, dessutom med genomgående svar.
+    Det är lite problematiskt att störst del av användarbasen verkar använda "ruby on rails" istället för ruby som kodspråk.
+
+
+maxbr431, hargr213

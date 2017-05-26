@@ -1,0 +1,13 @@
+"get_connector" likadan (ish).
+
+Bytte plats på parametrarna vid skapning av negativa
+ArithmeticConstraints, gjorde de lika som de positiva.
+Kallar sedan på funktion switch_op (som skrivit själv),
+vilket byter plats på op och inverse_op, vilket löste problemet.
+
+Detta löste vi däremot genom att lägga till if-satser i
+get_connectors, så att conn_a och conn_b är utvärdet på en
+adder/mutliplier, vare sig den är negativ eller inte.
+
+Största skillnaden är att han ändrade mest i constraint_network,
+medans vi ändrade i constaint-parser mest.

@@ -1,0 +1,14 @@
+Dag 1
+Denna dagen skulle vi göra uppgift nr 1. Uppgift nr 1 gick ut på att man skulle räkna ut vad en person skulle få för försäkringspremie med hjälp av en DSL. DSL:en skulle skapas av oss, alltså inget som var fördefinerat hur det skulle se ut. Försäkringspremien berodde på ett antal parametrar, hur gammal personen var, hur många år personen haft sitt körkort, var personen bodde, vilket bilmärke personen hade och om personen var en man eller kvinna.
+
+Under dagen genomgick vi hur vi skulle kunna lösa problemet, bl.a. gick vi igenom om det var rimligt att använda sig utav method_missing metoden som vi gått igenom nyligen på föreläsning, eller om vi skulle köra på en egen variant som bestod av en Array med Hashar i sig. Det blev den andra varianten då den stod ut mer från vad vi antog att de andra skulle göra. 
+
+Vi stötte aldrig på något större problem med denna uppgiften då den var rätt straight forward. eval() är rätt så enkel att använda sig av (den kör ju bara ruby-kod) och returnerar det den läser av från filen. 
+
+Dag 2
+Idag så var det dags att börja med uppgift 2. Denna uppgiften gick ut på att skapa ett ”språk” som skulle klara av att köra booleska uttryck.  Detta skulle den göra utifrån ett par fördefinerade regler.  Dessa regler uttryckte hur and, or och not samt variabeldeklarering ser ut. 
+
+Utifrån dessa regler samt med hjälp av rdparse.rb så skapade vi språket som angavs av reglerna. 
+Mycket av koden som finns i DiceRoller klassen gick att återanvända, vilket gjorde att uppgiften till större delen var relativt lätt. Dock uppkom en del problem, som oftast bara var typo-liknande grejer.
+Bl.a. missade vi att reglerna skulle börjas med ”start” vilket gjorde att inget fungerade alls… Detta tog ett tag att klura ut men till slut så insåg vi den fatala missen…
+Detta var dock bara början på en rad olika problem, vi fick också till att om vi sätter en variabel t så blev den alltid false oavsett vad vi skrev till den. Detta löstes dock med en :getvar variabel som returnerade korrekt variabel, om den inte finns så blir svaret false.

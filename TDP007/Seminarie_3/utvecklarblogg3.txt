@@ -1,0 +1,13 @@
+UPPGIFT 1:
+        Denna uppgift såg väldigt komplicerad ut när vi skulle börja skriva, me        n visade sig att vara mcyket simplare än vi hade trott.
+
+        Det vi började med var att kolla hur vi hade gjort under föreläsningen,        för att få en idé för hur vi skulle gå till väga. Detta ledde då till v        år slutgiltiga lösning.
+        Det vi gjorde var då helt enkelt att läsa in filen och skicka in i inst        ance_eval. Detta fungerade då vi hade funktioner som matchade till vad         som stod i filen vi evaluerade. Det var funktioner så som "car type", "        zip code" eller liknande. In i dessa funktioner skickade vi ett default        -värde, följt av en massa arrayer av värden som skulle kollas enligt up        pgiften i arrayform (["BMW", 5]). Dessa skickades alla in till funktion        en med hjälp av en asterix (*) vid parameternamnet (vilket då läste in         alla arrayer förutom default-arrayen in i funktionen.
+        Väl inne i funktionen så itererar vi över alla arrayerna, och kollar om        motsvarande variabel matchade någon av namnen i arrayerna. Ifall den gj        orde det, så sparade vi värdet i en variabel, och om den inte fanns så         ökas variabeln med default-värdet.
+        Detta upprepades för alla funktionerna. Den enda som avvek från detta v        ar de speciella reglerna som skulle göras efter allt annat. Detta gjord        e vi genom att skicka in en sträng i en funktion och köra "eval"-funkti        onen på den.
+
+UPPGIFT 2:
+        Denna uppgift, likt uppgift 1, verkade svår att göra när vi läste om de        n, men när man väl kom in i det så var det (likt ovan) enkelt.
+        Vi började, (igen) likt ovan, med att läsa igenom föreläsningen och ta         det första bästa resultatet.
+        Lösningen vi kom fram till var att göra tokens av alla saker som ska ku        nna matchas, och sedan matcha det enligt uppgiftens specifikation.
+        Variablerna sparade vi i en Hash-tabell, och vi lade till en till regel        för att hämta värdet ur variabeln, tillsammans med den förbestämda för         att initiera variabeln.

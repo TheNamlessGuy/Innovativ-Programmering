@@ -1,0 +1,51 @@
+Utvecklarblogg - Seminarie 1
+
+
+*************** Hur är det att lära sig ett nytt språk *****************
+Sättet som vi lärt oss programmera i ruby är att gå igenom föreläsningsmaterialet och sökt
+information på internet då vi har varit osäkra på hur vissa konstruktioner ser ut i ruby.
+
+Ett fel som vi har gjort mer än en gång är att vi missar att avsluta if-satser med 'end'.
+Känns som det är lätt att missa detta då vi har vana av programmering i python och där det
+inte behövs.
+
+En ny konstruktion i ruby är användandet av block. Hade lite problem i början när vi
+försökte använda oss av block för att få till rätt syntax. Till exempel så skapar man en
+funktion som ska ta in ett block genom att deklarera &block i parameterlistan men sen när
+man kallar på funktionen ska blocket som ska skickas in i funktionen skrivas efter
+parenteserna.
+
+Det som vi tycker är en fördel med python är ändå att alla if-satser avslutas med end. Det
+kanske tar ett litet tag innan man kommer in i det men den stora fördelen som vi ser det är
+att denna syntax inte tvingar programmeraren att indentera sin kod exakt rätt hela tiden som
+i python. Auto-indentering blir möjlig??
+
+Ruby känns väldigt likt vanlig engelska och är lätt att förstå. Det är trots detta väldigt
+likt andra programmeringsspråk, såsom Python. Det blir därmed ett bra nybörjarspråk som är
+lätt att lära sig, men fortfarande ger en bra introduktion till hur programmering fungerar.
+
+
+***************** Tekniker som vi stött på **************************
+Reguljära uttryck
+          - Svårt. Säkert väldigt användbart när man lärt sig det. Bra med rubular.com där
+          man kan testa sina reguljära uttryck, vi har suttit länge och fixat och trixat för
+          att få till rätt uttryck. Vi har lyckats klara alla uppgifter men är inte riktigt
+          säkra på hur.
+Enhetstester
+        - Lätt att komma igång med. Bra att flytta testkod från själva huvudprogrammet. Enkelt
+        att göra ändringar i sitt program och snabbt kunna utföra testerna igen för att se att
+        allt fungerar som det ska.
+
+***************** Arbetssätt *****************************************
+
+Vi arbetade med de givna labbarna och gjorde två stycken från varje avsnitt. Vi arbetade
+tillsammans vid en dator och diskuterade uppgifterna med varandra. Vi turades även om att
+skriva koden. Vi använde oss alltså av par-programmering.
+
+Uppgifterna har varit varierande svåra. De kändes överlag som att uppgifterna hade en lagom
+svårighetsgrad för att vi skulle klara av dem men att de ändå skulle vara utmanande.
+
+Oftast så har uppgiftsbeskrivningarna varit tydliga och lättförståeliga men ibland lite tvetydiga
+om vad som menas. Uppgifterna har tagit med det mesta av det som vi gått igenom på
+föreläsningarna. Det vill säga grundläggande ruby och dess syntax, reguljära uttryck och
+enhetstestning.

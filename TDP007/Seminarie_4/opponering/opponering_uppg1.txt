@@ -1,0 +1,31 @@
+Testade tillräckligt med fel. Hade dock utskrifter i testningen.
+Testade endast samma fall med olika värden. Testade aldrig negativa tal.
+De hade fixat på samma sätt som oss genom att kolla ifall a respektive b inte är satt.
+Och då kolla inverse_op för att då få "-" istället för "+". Alltså i praktiken:
+a satt? och inte b satt?
+  b = c-a
+
+Och samma för motsatta och även för multiplikation.
+Alltså lade de till if-satser för att få alla fall att fungera vlket vi också gjorde.
+
+
+Använder ej flyttal, detta gör det problematiskt gällande avrundningen för celsius2fahrenheit.
+Ska bli 37.777 alltså 38, blir 37:
+c, f = celsius2fahrenheit
+f.user_assign 100
+
+Funktionen såg iprincip likadan ut som vår. Den största skillnaden är att vår hade annat namn.
+Dessutom använde vi oss endast av en mult istället för två. Deras variabelnamn var lite korta
+och hade väldigt lika namn vilket inte hjälpte detta gällande deras firstConnector.
+first och last är inget man förstår, slappt.
+
+Bra användning av konstanter! Detta gjorde inte vi 
+
+9 * 1(celsius) == first
+(first blir satt)
+5 * sec == first
+(sec blir satt)
+32 + sec == f
+(f blir satt)
+
+

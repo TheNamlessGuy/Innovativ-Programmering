@@ -1,0 +1,26 @@
+UPPGIFT 1:
+        Första uppgiften skrev vi två olika lösningar på. Detta då den första 
+        lösningen såg väldigt oorganiserad ut och hade en del strukturella   
+        tillkortakommanden. Eftersom lösningen inte var särskillt beroende   
+        av regex valde vi att göra en till kortare lösning för syftet.       
+        När vi hade strukturerat upp koden från den första lösningen insåg   
+        vi att eftersom den inte förlitar sig lika mycket på regex så var den 
+        mer generell. Och därav enklare att porta över till den andra delen av
+        uppgiften.                                                            
+UPPGIFT 2:
+        Det första som vi kom att tänka på var att hemsidan var annonserad.
+        Vår lösning hämtar ut det vi anser är viktigt angående händelserna som
+        fanns på hemsidan. Eftersom hemsidan inte följde standarden angående
+        hCalendar fullt ut, behövde vi först och främst leta fram all
+        information som fanns under "vevent" taggarna. För att sedan veta vad
+        vi skulle hämta samt var detta låg. Tyvärr innebar detta en stor del
+        iterationer som gav ett prestandasvagt resultat. Vi skulle kunna ha
+        gjort lösningen rekursivt men vi fick slut på tid för att komme på en
+        sådan lösning. Vi försökte med olika lösningsalternativ men det var
+        svårt att hitta något med samma precision som vår lösning hade.
+        Även om vi fick offra effektivitet för att få fram den nivån av
+        precision så tyckte vi att det var vettigt att gå tillväga på detta
+        sätt. Det vi fick lära oss om ruby var att deras get funktion
+        har samma resultat som en loop. Vi har även lärt oss att rexml och
+        xpath är otroligt smidiga verktyg för att söka igenom dessa typer av
+        xml baserade dokument.

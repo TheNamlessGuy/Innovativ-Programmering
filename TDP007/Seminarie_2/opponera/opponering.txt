@@ -1,0 +1,8 @@
+Uppgift 1.
+  Kort och fin fungerar perfekt för båda uppgifterna. Snyggt att lösa problem med $1. 
+  Problematiskt då det modulärbara är hela regexuttrycken, vilket kan bli svårt för en användare. Vältestat för både väder och fotboll.
+
+Uppgift 2.
+  Hämtar endast ut namn på händelser. Detta följer hCalendar standarden till fullo. Men gällande syftet fungerar det inte eftersom man bör veta när det man vill lyssna på ska sändas för att kunna lyssna... De sparade händelserna i en array vilket är en tolkningsfråga om det är ett "lämpligt" ruby-objekt. 
+  Kort och gott fin men dålig insats, vi hade förväntat oss mer. hCalendar(FEL).
+  Vältestad lösning. De testade även h-Card.

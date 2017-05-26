@@ -1,0 +1,17 @@
+UPPGIFT 1:
+        Kort, effektiv, enkel lösning.
+        Reglerna inte i policy-filen (tolkning?)
+        Kollar klassen i get_range (onödigt?)
+        blandar symbols och strängar?
+
+        TEST:
+          Kort och bra, visar att uppgiften fungerar.
+UPPGIFT 2:
+        Kort och bra tokens (inte tydligt?)
+        Annars ganska identisk till vår lösning
+        Snygg lösning för testning
+        Användning av yield (++)
+        
+        TEST:
+          Bra tester, visar alla språkets användningar.
+          Onämnd variabel returnerar false? Kanske dåligt (vi gjorde lika)

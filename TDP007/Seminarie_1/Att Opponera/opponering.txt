@@ -1,0 +1,36 @@
+Uppgift 1.
+
+Deras lösning var enkel att läsa. Eftersom vi använder {} istället för do och end. Så blev det lite främmande för oss. Do och end är dock mer "ruby".
+Deras lösning var dock längre än våran. Man skulle kunna ha använt count.times istället för 1.upto(count).
+
+Deras klass såg iprincip identisk ut till våran. Enda skillnaden var samma som tidigare med 1.upto(count).
+
+
+Uppgift 2.
+
+Koden var välskriven och alla variabelnamn var synligt uttänkta.
+
+Uppgift 5.
+
+Klassen såg väl strukturerad ut och fyllde rätt funktionalitet. Enda skillnaden från vår lösning var i funktionen fullname där vi använde en sträng och #{} för att få ihop allt. Medans de använde sträng + sträng. Den funktionella skillnaden är att deras lösning inte hade fungerat ifall något namn är ett heltal.
+
+Uppgift 6.
+
+Klassen är uppbyggd på likadant sätt som våran. Skillnaden är att de hade använt Time istället för Date. Med detta slapp de includera 'date'. Men eftersom det var uppmuntrat i uppgiften att använda det så bör de gjort det. Dock så hade de kommenterat ut deras includering antagligen för att visa att de visste om denna metod.
+
+Uppgift 7.
+
+Deras fib funktion är smått otydlig. Detta för att de inte skriver return innan returen. Deras funktion var simpel tack vare användning av rekursion.
+
+Uppgift 8.
+
+Lösningen var kort och effektiv. Till skillnad från vår lösning använde de sig av regex istället för en "vanlig" split. Deras skulle fungera i fler fall en våran. Då den inte kräver ett mellanslag.
+
+Uppgift 10.
+
+Deras lösning var liknande till våran. De hade dock ingen hantering för vad som kommer innan :. De hade kunnat minska antalet variabler dessutom. Det hjälpte dock för läsbarheten med deras lösning.
+
+Uppgift 11.
+
+Otroligt kort och effektiv lösning. Användandet av medlemsfunktioner var imponerande. I detta fall kan de ha kunnat skippa att sätta deras regex i en variabel då koden endå var så pass läsbar.
+

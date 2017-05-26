@@ -1,0 +1,4 @@
+(set a true)
+(and a true)
+(or false false)
+(not a)

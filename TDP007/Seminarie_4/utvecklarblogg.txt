@@ -1,0 +1,31 @@
+Uppgift 1:
+        Det enda vi ändrade på var att lägga till två if-satser i new_value
+        funktionen. Detta löste problemet att bara out-variabeln kunde sättas 
+        (som vi fick i den givna koden), och att koden därför bara fungerade 
+        "framåt" och inte "bakåt". De if-satser vi lade till var de som fixade
+        just det problemet med envägsfunktionalitet, genom att lägga till 
+        if-satser för om a eller b inte hade något värde satt.               
+        Uppgiften i sig var lite problematisk då allting blev mycket mer
+        kompliserat eftersom ekvationen använder sig av flyt-tal. Dessutom
+        fanns det många olika ekvationer för att konvertera. Dessa funktioner
+        hade större marginaler än vår lösning. Detta gjorde enhetstestningen 
+        svårare eftersom flyt-tal har en tendens att få mer än en decimal.
+        Detta löstes väldigt fint med hjälp av assert in delta som tar in    
+        en range som ska matcha.
+
+                     
+Uppgift 2:
+        Denna uppgift kändes som en väldigt stor utmaning, i alla fall till
+        en början. Vi fick in ett berg av kod som vi inte riktigt visste     
+        vad vi skulle göra med det. Efter att ha stirrat på koden i en
+        tidsperiod som förblir onämnd så kom vi först och främst fram till att
+        funktionen "get_connector" inte fanns. Vi lade till denna (vilken i
+        sig endast returnerar out-variabeln för alla saker som inte är
+        connectors), och då funkade alla ekvationer som bara hade en uträkning
+        per sida. Dock fungerade det inte om det fanns flera än en uträkning.
+        Detta resulterade då i ett problem när vi försökte ha flera
+        uträkningar, nämligen att "Adder"-klassen och "Multiplier"-klassen
+        inte har "name"-funktioner. Om vi lade till en sådan funktion så
+        klagade systemet på att den inte kunde använda "Adder"s eller
+        "Multiplier"s utanför den funktionen. Det löste vi genom att lägga
+        till några if-satser i funktionen "get_connectors".
